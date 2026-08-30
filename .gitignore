@@ -1,0 +1,14 @@
+# Local downloads & raw video files
+Khóa học N4/
+*.mp4
+*.ts
+*.m3u8
+
+# Python & IDE
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.env.*
+.vscode/
+.idea/

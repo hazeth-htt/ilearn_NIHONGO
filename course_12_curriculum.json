@@ -1,0 +1,5394 @@
+{
+  "status": {
+    "code": 200,
+    "message": null
+  },
+  "data": {
+    "lessons": [
+      {
+        "id": 84668,
+        "name": "Bài Kiểm Tra Nhập môn N4",
+        "type": 4,
+        "exercise_id": 0,
+        "children": [
+          {
+            "id": 84669,
+            "name": "Bài Kiểm Tra Nhập môn N4",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 84670,
+                "name": "Bài Kiểm Tra Nhập môn N4",
+                "type": 5,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 7647,
+        "name": "Bài 26 : Cách hình thành và sử dụng んです",
+        "type": 4,
+        "exercise_id": 0,
+        "children": [
+          {
+            "id": 7671,
+            "name": "Từ Vựng Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7672,
+                "name": "Bài 26 Phần 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7673,
+                "name": "Bài 26 Phần 2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7674,
+                "name": "Bài 26 Phần 3",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7675,
+                "name": "Bai 26",
+                "type": 2,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7676,
+                "name": "Bài 26 - Từ Vựng N4",
+                "type": 3,
+                "exercise_id": 7098,
+                "is_complete": 1,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7657,
+            "name": "Kanji - Hiền sensei",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7658,
+                "name": "Kanji (mới) - Bài 26 - 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7659,
+                "name": "Kanji (mới) - Bài 26 - 2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7660,
+                "name": "Giới thiệu Kanji N4 và phương pháp học",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7661,
+                "name": "Flash card - Bài 26",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7662,
+                "name": "Bộ Thủ trong Kanji",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7663,
+                "name": "Bài tập N4 Kanji: Bài 26",
+                "type": 3,
+                "exercise_id": 3141,
+                "is_complete": 1,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7664,
+            "name": "Ngữ Pháp Cải Thiện - Tuyền Sensei",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7665,
+                "name": "Bài 26 Phần 1 : Vていただけませんか - Anh chụp ảnh giúp em có được không?",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7666,
+                "name": "Bài 26 phần 2 : Từ để hỏi＋Vたらいいですか - Nên học tiếng Nhật ở đâu nhỉ?",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7667,
+                "name": "Bài 26 phần 3 : Cách chia 〜んですが、〜んですか、〜んです。",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7668,
+                "name": "Bài 26 phần 4 : Cách sử dụng  〜んですが",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7669,
+                "name": "Bài 26 phần 5 : Cách sử dụng 〜んですか",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7670,
+                "name": "Bài 26 Phần 6 : Cách sử dụng 〜んです",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7655,
+            "name": "Đọc Hiểu - Mon sensei",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7656,
+                "name": "Đọc Hiểu (Mới) - Bài 26",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7648,
+            "name": "Nghe Hiểu - Lệ sensei",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7649,
+                "name": "Nghe Hiểu Bài 26",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7650,
+            "name": "Luyện Tập",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7651,
+                "name": "Bài tập bài 26",
+                "type": 3,
+                "exercise_id": 2480,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7652,
+            "name": "Kaiwa - Giáo Viên Nhật",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7653,
+                "name": "Luyện Giao tiếp 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7654,
+                "name": "ごみはどこに出したらいいですか",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 7677,
+        "name": "Bài 27 : Động từ thể khả năng",
+        "type": 4,
+        "exercise_id": 0,
+        "children": [
+          {
+            "id": 7698,
+            "name": "Từ Vựng Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7699,
+                "name": "Bài 27 Phần 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7700,
+                "name": "Bài 27 Phần 2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7701,
+                "name": "Bài 27 Phần 3",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7702,
+                "name": "Bai 27",
+                "type": 2,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7703,
+                "name": "Bài 27 - Từ Vựng N4",
+                "type": 3,
+                "exercise_id": 7099,
+                "is_complete": 1,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7687,
+            "name": "Kanji",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7688,
+                "name": "Kanji bài 27.1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7689,
+                "name": "Kanji bài 27.2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7690,
+                "name": "Flash card - Bài 27",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7691,
+                "name": "Bài tập N4 Kanji: Bài 27",
+                "type": 3,
+                "exercise_id": 3176,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7692,
+            "name": "Ngữ Pháp Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7693,
+                "name": "Bài 27 phần 1 : Thể khả năng V可能形",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7694,
+                "name": "Bài 27 phần 2 : Cách dùng Thể khả năng + 見えます／聞こえます",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7695,
+                "name": "Bài 27 phần 3 : N1は ~ が、N2は ~",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7696,
+                "name": "Bài 27 phần 4 : しか + Thể phủ định - Còn cái nịt.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7697,
+                "name": "Bài 27 phần 5 : できます - Tôi có thể lái xe",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7685,
+            "name": "Đọc Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7686,
+                "name": "Đọc Hiểu (Mới) - Bài 27",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7678,
+            "name": "Nghe Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7679,
+                "name": "Nghe Hiểu Bài 27",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7680,
+            "name": "Luyện Tập",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7681,
+                "name": "Bài tập bài 27",
+                "type": 3,
+                "exercise_id": 2481,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7682,
+            "name": "Kaiwa",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7683,
+                "name": "Luyện Giao tiếp 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7684,
+                "name": "何でも作れるんですね",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 7704,
+        "name": "Bài 28 : Diễn tả 2 hành động diễn ra cùng lúc",
+        "type": 4,
+        "exercise_id": 0,
+        "children": [
+          {
+            "id": 7722,
+            "name": "Từ Vựng Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7723,
+                "name": "Bài 28 Phần 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7724,
+                "name": "Bài 28 Phần 2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7725,
+                "name": "Bài 28 Phần 3",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7726,
+                "name": "Bai 28",
+                "type": 2,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7727,
+                "name": "Bài 28 - Từ Vựng N4",
+                "type": 3,
+                "exercise_id": 7100,
+                "is_complete": 1,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7714,
+            "name": "Kanji",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7715,
+                "name": "Kanji bài 28.1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7716,
+                "name": "Kanji bài 28.2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7717,
+                "name": "Flash card - Bài 28",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7718,
+                "name": "Bài tập N4 Kanji: Bài 28",
+                "type": 3,
+                "exercise_id": 3177,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7719,
+            "name": "Ngữ Pháp Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7720,
+                "name": "Bài 28 phần 1 : ながら +  V ています",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7721,
+                "name": "Bài 28 phần 2 : ～し、~し、...",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7712,
+            "name": "Đọc Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7713,
+                "name": "Đọc Hiểu (Mới) - Bài 28",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7705,
+            "name": "Nghe Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7706,
+                "name": "Nghe Hiểu Bài 28",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7707,
+            "name": "Luyện Tập",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7708,
+                "name": "Bài tập bài 28",
+                "type": 3,
+                "exercise_id": 2484,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7709,
+            "name": "Kaiwa",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7710,
+                "name": "Luyện Giao tiếp 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7711,
+                "name": "出張も多いし、試験もあるし…",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 7728,
+        "name": "Bài 29 : Diễn tả trạng thái đồ vật",
+        "type": 4,
+        "exercise_id": 0,
+        "children": [
+          {
+            "id": 7748,
+            "name": "Từ Vựng Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7749,
+                "name": "Bài 29 Phần 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7750,
+                "name": "Bài 29 Phần 2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7751,
+                "name": "Bài 29 Phần 3",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7752,
+                "name": "Bai 29",
+                "type": 2,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7753,
+                "name": "Bài 29 - Từ Vựng N4",
+                "type": 3,
+                "exercise_id": 7101,
+                "is_complete": 1,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7738,
+            "name": "Kanji",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7739,
+                "name": "Kanji bài 29.1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7740,
+                "name": "Kanji bài 29.2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7741,
+                "name": "Flash card - Bài 29",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7742,
+                "name": "Bài tập N4 Kanji: Bài 29",
+                "type": 3,
+                "exercise_id": 3180,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7743,
+            "name": "Ngữ Pháp Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7744,
+                "name": "Bài 29 Phần 1 : Tự động từ  và tha động từ",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7745,
+                "name": "Bài 29 Phần 2 : Vています / Vてしまいます - Đèn đang sáng/ Tôi sẽ đọc xong quyển sách này",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7746,
+                "name": "Bài 29 phần 3 : Vてしまいました - Tại sao anh lại lỡ yêu em mất rồi?",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7747,
+                "name": "Bài 29 phần 4 : Mở rộng vài mẫu câu trong giao tiếp.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7736,
+            "name": "Đọc Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7737,
+                "name": "Đọc Hiểu (Mới) - Bài 29",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7729,
+            "name": "Nghe Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7730,
+                "name": "Nghe Hiểu Bài 29",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7731,
+            "name": "Luyện Tập",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7732,
+                "name": "Bài tập bài 29",
+                "type": 3,
+                "exercise_id": 2482,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7733,
+            "name": "Kaiwa",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7734,
+                "name": "Luyện Giao tiếp 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7735,
+                "name": "忘れ物をしてしまったんですが…",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 7754,
+        "name": "Bài 30 : Diễn tả trạng thái, kết quả của 1 hành động",
+        "type": 4,
+        "exercise_id": 0,
+        "children": [
+          {
+            "id": 7775,
+            "name": "Từ Vựng Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7776,
+                "name": "Bài 30 Phần 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7777,
+                "name": "Bài 30 Phần 2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7778,
+                "name": "Bài 30 Phần 3",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7779,
+                "name": "Bai 30",
+                "type": 2,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7780,
+                "name": "Bài 30 - Từ Vựng N4",
+                "type": 3,
+                "exercise_id": 7102,
+                "is_complete": 1,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7765,
+            "name": "Kanji",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7766,
+                "name": "Kanji bài 30.1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7767,
+                "name": "Kanji bài 30.2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7768,
+                "name": "Flash card - Bài 30",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7769,
+                "name": "Bài tập N4 Kanji: Bài 30",
+                "type": 3,
+                "exercise_id": 3185,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7770,
+            "name": "Ngữ Pháp Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7771,
+                "name": "Bài 30 phần 1 : Nは/がVてあります - Ở trên lịch có ghi lịch làm việc của tuần này.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7772,
+                "name": "Bài 30 phần 2 : Vておきます - Trước buổi học, hãy chuẩn bị từ mới nhé!",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7773,
+                "name": "Bài 30 phần 3 : Vておきます- Phần 2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7774,
+                "name": "Bài 30 phần 4 : Vています, ～とか～とか - Trên tường có treo mấy thứ như là tranh, đồng hồ…",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7763,
+            "name": "Đọc Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7764,
+                "name": "Đọc Hiểu (Mới) - Bài 30",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7755,
+            "name": "Nghe Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7756,
+                "name": "Nghe Hiểu Bài 30",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7757,
+            "name": "Luyện Tập",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7758,
+                "name": "Bài luyện tập H",
+                "type": 3,
+                "exercise_id": 2402,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7759,
+                "name": "Bài tập bài 30",
+                "type": 3,
+                "exercise_id": 2486,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7760,
+            "name": "Kaiwa",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7761,
+                "name": "Luyện Giao tiếp 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7762,
+                "name": "非常袋を準備しておかないと",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 7781,
+        "name": "Bài 31 : Động từ thể ý chí",
+        "type": 4,
+        "exercise_id": 0,
+        "children": [
+          {
+            "id": 7802,
+            "name": "Từ Vựng Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7803,
+                "name": "Bài 31 Phần 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7804,
+                "name": "Bài 31 Phần 2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7805,
+                "name": "Bài 31 Phần 3",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7806,
+                "name": "Bai 31",
+                "type": 2,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7807,
+                "name": "Bài 31 - Từ Vựng N4",
+                "type": 3,
+                "exercise_id": 7103,
+                "is_complete": 1,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7791,
+            "name": "Kanji",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7792,
+                "name": "Kanji bài 31.1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7793,
+                "name": "Kanji bài 31.2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7794,
+                "name": "Flash card - Bài 31",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7795,
+                "name": "Bài tập N4 Kanji: Bài 31",
+                "type": 3,
+                "exercise_id": 3269,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7796,
+            "name": "Ngữ Pháp Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7797,
+                "name": "Bài 31 phần 1 : Vよう - Cùng đi ăn sushi nào.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7798,
+                "name": "Bài 31 phần 2 : Vようと思っています - Tôi định sẽ về nước.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7799,
+                "name": "Bài 31 phần 3 : Vる/ないつもりです - Tôi dự định sẽ về nước.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7800,
+                "name": "Bài 31 phần 4 : Vる予定です - Tôi có kế hoạch sẽ đi công tác ở HCM.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7801,
+                "name": "Bài 31 phần 5 : Ôn tập về Thể Dự Định",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7784,
+            "name": "Đọc Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7785,
+                "name": "Đọc hiểu bài 31",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7782,
+            "name": "Nghe Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7783,
+                "name": "Nghe Hiểu Bài 31",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7786,
+            "name": "Luyện Tập",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7787,
+                "name": "Bài tập bài 31",
+                "type": 3,
+                "exercise_id": 2491,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7788,
+            "name": "Kaiwa",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7789,
+                "name": "Luyện Giao tiếp 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7790,
+                "name": "料理を習おうと思っています",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 7808,
+        "name": "BÀI 32 : Cách diễn tả lời khuyên, và khả năng diễn ra việc gì đó",
+        "type": 4,
+        "exercise_id": 0,
+        "children": [
+          {
+            "id": 7828,
+            "name": "Từ Vựng Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7829,
+                "name": "Bài 32 Phần 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7830,
+                "name": "Bài 32 Phần 2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7831,
+                "name": "Bài 32 Phần 3",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7832,
+                "name": "Bai 32",
+                "type": 2,
+                "exercise_id": 0,
+                "is_complete": 1,
+                "trial_study": true
+              },
+              {
+                "id": 7833,
+                "name": "Bài 32 - Từ Vựng N4",
+                "type": 3,
+                "exercise_id": 7104,
+                "is_complete": 1,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7818,
+            "name": "Kanji",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7819,
+                "name": "Kanji bài 32.1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7820,
+                "name": "Kanji bài 32.2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7821,
+                "name": "Flash card - Bài 32",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7822,
+                "name": "Bài tập N4 Kanji: Bài 32",
+                "type": 3,
+                "exercise_id": 3270,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7823,
+            "name": "Ngữ Pháp Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7824,
+                "name": "Bài 32 phần 1 : Vない方がいいです - Nguy hiểm lắm. Không nên đi buổi tối tới đó 1 mình.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7825,
+                "name": "Bài 32 phần 2 : Vるでしょう - Ngày mai có lẽ sẽ nắng to.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7826,
+                "name": "Bài 32 phần 3 : V かもしれません - Có lẽ con bị mắc cảm rồi.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7827,
+                "name": "Bài 32 phần 4 : N( lượng từ ) で V( thể khả năng ) - Tầm 5 triệu có mua được điện thoại mới không?",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7811,
+            "name": "Đọc Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7812,
+                "name": "Đọc hiểu bài 32",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7809,
+            "name": "Nghe Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7810,
+                "name": "Nghe Hiểu Bài 32",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7813,
+            "name": "Luyện Tập",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7814,
+                "name": "Bài tập bài 32",
+                "type": 3,
+                "exercise_id": 2492,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7815,
+            "name": "Kaiwa",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7816,
+                "name": "Luyện Giao tiếp 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7817,
+                "name": "無理をしないほうがいいですよ",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 7834,
+        "name": "BÀI 33 : Thể mệnh lệnh, Cấm đoán",
+        "type": 4,
+        "exercise_id": 0,
+        "children": [
+          {
+            "id": 7856,
+            "name": "Từ Vựng Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7857,
+                "name": "Bài 33 Phần 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7858,
+                "name": "Bài 33 Phần 2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7859,
+                "name": "Bài 33 Phần 3",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7860,
+                "name": "Bai 33",
+                "type": 2,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7861,
+                "name": "Bài 33 - Từ Vựng N4",
+                "type": 3,
+                "exercise_id": 7106,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7837,
+            "name": "Đọc Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7838,
+                "name": "Đọc Hiểu Bài 33",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7849,
+            "name": "Ngữ Pháp Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7850,
+                "name": "Bài 33 phần 1 : Thể mệnh lệnh 命令形 - Chạy ngay đi.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7851,
+                "name": "Bài 33 phần 2 : Thể cấm chỉ 禁止形 - Cấm nhìn bài bạn bên cạnh!",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7852,
+                "name": "Bài 33 phần 3 : 〜と書いてあります/ 〜と読みます - Ở kia có viết 『止まれ』",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7853,
+                "name": "Bài 33 phần 4 : AはBという意味です - Cái này có nghĩa là 「止まっていけない」",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7854,
+                "name": "Bài 33 phần 5 : Truyền đạt と言っていました",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7855,
+                "name": "Bài 33 phần 6 : Truyền đạt と伝えていただけませんか",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7844,
+            "name": "Kanji",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7845,
+                "name": "Kanji bài 33.1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7846,
+                "name": "Kanji bài 33.2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7847,
+                "name": "Flash card - Bài 33",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7848,
+                "name": "Bài tập N4 Kanji: Bài 33",
+                "type": 3,
+                "exercise_id": 3271,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7835,
+            "name": "Nghe Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7836,
+                "name": "Nghe Hiểu Bài 33",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7839,
+            "name": "Luyện Tập",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7840,
+                "name": "Bài tập bài 33",
+                "type": 3,
+                "exercise_id": 2496,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7841,
+            "name": "Kaiwa",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7842,
+                "name": "luyện giao tiếp 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7843,
+                "name": "これはどういう意味ですか",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 75837,
+        "name": "Kiểm Tra Giữa Kì (26-33)",
+        "type": 4,
+        "exercise_id": 0,
+        "children": [
+          {
+            "id": 75840,
+            "name": "N4-Bài Kiểm Tra Giữa Kì (26-33)",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 75841,
+                "name": "N4-Bài Kiểm Tra Giữa Kì (26-33)",
+                "type": 5,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 7862,
+        "name": "BÀI 34 : Cách nói \"theo như\", tuần tự của hành động",
+        "type": 4,
+        "exercise_id": 0,
+        "children": [
+          {
+            "id": 7881,
+            "name": "Từ Vựng Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7882,
+                "name": "Bài 34 Phần 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7883,
+                "name": "Bài 34 Phần 2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7884,
+                "name": "Bài 34 Phần 3",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 51331,
+                "name": "Bai 34",
+                "type": 2,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7885,
+                "name": "Bài 34 - Từ Vựng N4",
+                "type": 3,
+                "exercise_id": 7108,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7872,
+            "name": "Kanji",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7873,
+                "name": "Kanji bài 34.1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7874,
+                "name": "Kanji bài 34.2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7875,
+                "name": "Flash card - Bài 34",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7876,
+                "name": "Bài tập N4 Kanji: Bài 34",
+                "type": 3,
+                "exercise_id": 3272,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7877,
+            "name": "Ngữ Pháp Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7878,
+                "name": "Bài 34 phần 1 : Vた/Vる/Nの 通りに、～ - Tôi nấu theo công thức.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7879,
+                "name": "Bài 34 phần 2 : Vた/Nのあとで、～ - Sau khi tắm xong thì mới đánh răng.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7880,
+                "name": "Bài 34 phần 3 : Vて/Vないで、～ - Ăn bún đậu chấm mắm tôm.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7865,
+            "name": "Đọc Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7866,
+                "name": "Đọc Hiểu Bài 34",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7863,
+            "name": "Nghe Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7864,
+                "name": "Nghe Hiểu Bài 34",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7867,
+            "name": "Luyện Tập",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7868,
+                "name": "Bài tập bài 34",
+                "type": 3,
+                "exercise_id": 2498,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7869,
+            "name": "Kaiwa",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7870,
+                "name": "わたしがしたとおりに、してください",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7871,
+                "name": "luyện giao tiếp 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 7886,
+        "name": "BÀI 35 : Thể Điều kiện",
+        "type": 4,
+        "exercise_id": 0,
+        "children": [
+          {
+            "id": 7908,
+            "name": "Từ Vựng Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7909,
+                "name": "Bài 35 Phần 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7910,
+                "name": "Bài 35 Phần 2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7911,
+                "name": "Bài 35 Phần 3",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7912,
+                "name": "Bai 35",
+                "type": 2,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7913,
+                "name": "Bài 35 - Từ Vựng N4",
+                "type": 3,
+                "exercise_id": 7109,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7896,
+            "name": "Kanji",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7897,
+                "name": "Kanji bài 35.1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7898,
+                "name": "Kanji bài 35.2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7899,
+                "name": "Flash card - Bài 35",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7900,
+                "name": "Bài tập N4 Kanji: Bài 35",
+                "type": 3,
+                "exercise_id": 3273,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7901,
+            "name": "Ngữ Pháp Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7902,
+                "name": "Bài 35 phần 1 : Thể điều kiện - Cách chia của động từ khẳng định.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7903,
+                "name": "Bài 35 phần 2 : Thể điều kiện - Cách chia của Aナ , N , Aイ",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7904,
+                "name": "Bài 35 phần 3 : Thể điều kiện - Cách chia của phủ định (－)",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7905,
+                "name": "Bài 35 phần 4 : Từ để hỏi + Vばいいですか - Tôi muốn xem lá phong đỏ thì có thể đi đâu được nhỉ?",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7906,
+                "name": "Bài 35 phần 5 : ～ば、～ほど - Lương càng nhiều càng tốt, lương càng cao càng tốt.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7907,
+                "name": "Bài 35 phần 6 : Nなら - Nếu là đồ ăn Việt thì bánh xèo ổn đó.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7889,
+            "name": "Đọc Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7890,
+                "name": "Đọc Hiểu Bài 35",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7887,
+            "name": "Nghe Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7888,
+                "name": "Nghe Hiểu Bài 35",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7891,
+            "name": "Luyện Tập",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7892,
+                "name": "Bài tập bài 35",
+                "type": 3,
+                "exercise_id": 2500,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7893,
+            "name": "Kaiwa",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7894,
+                "name": "どこかいい所、ありませんか·",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7895,
+                "name": "luyện giao tiếp 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 7914,
+        "name": "BÀI 36 : Mẫu câu biểu hiện một hành động có mục đích",
+        "type": 4,
+        "exercise_id": 0,
+        "children": [
+          {
+            "id": 7934,
+            "name": "Từ Vựng Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7935,
+                "name": "Bài 36 Phần 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7936,
+                "name": "Bài 36 Phần 2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7937,
+                "name": "Bài 36 Phần 3",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7938,
+                "name": "Bai 36",
+                "type": 2,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7939,
+                "name": "Bài 36 - Từ Vựng N4",
+                "type": 3,
+                "exercise_id": 7110,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7924,
+            "name": "Kanji",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7925,
+                "name": "Kanji bài 36.1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7926,
+                "name": "Kanji bài 36.2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7927,
+                "name": "Flash card - Bài 36",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7928,
+                "name": "Bài tập N4 Kanji: Bài 36",
+                "type": 3,
+                "exercise_id": 3275,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7929,
+            "name": "Ngữ Pháp Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7930,
+                "name": "Bài 36 phần 1 : V ように、～ - Tôi học tiếng Nhật để được làm cho công ty Nhật.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7931,
+                "name": "Bài 36 phần 2 : V (khả năng)るようになります - Bé A đã có thể đi được.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7932,
+                "name": "Bài 36 phần 3 : Vるようにしています - Tôi cố gắng không ăn đồ ngọt.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7933,
+                "name": "Bài 36 phần 4 : Vるようにしてください - Hãy cố gắng đừng đi đâu xa nhé.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7917,
+            "name": "Đọc Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7918,
+                "name": "Đọc Hiểu Bài 36",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7915,
+            "name": "Nghe Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7916,
+                "name": "Nghe Hiểu Bài 36",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7919,
+            "name": "Luyện Tập",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7920,
+                "name": "Bài tập bài 36",
+                "type": 3,
+                "exercise_id": 2501,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7921,
+            "name": "Kaiwa",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7922,
+                "name": "毎日運動するようにしています",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7923,
+                "name": "luyện giao tiếp 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 7940,
+        "name": "BÀI 37 : Thể bị động",
+        "type": 4,
+        "exercise_id": 0,
+        "children": [
+          {
+            "id": 7962,
+            "name": "Từ Vựng Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7963,
+                "name": "Bài 37 Phần 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7964,
+                "name": "Bài 37 Phần 2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7965,
+                "name": "Bài 37 Phần 3",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7966,
+                "name": "Bai 37",
+                "type": 2,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7967,
+                "name": "Bài 37 - Từ Vựng N4",
+                "type": 3,
+                "exercise_id": 7111,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7950,
+            "name": "Kanji",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7951,
+                "name": "Kanji bài 37.1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7952,
+                "name": "Kanji bài 37.2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7953,
+                "name": "Flash card - Bài 37",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7954,
+                "name": "Bài tập N4 Kanji: Bài 37",
+                "type": 3,
+                "exercise_id": 3276,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7943,
+            "name": "Đọc Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7944,
+                "name": "Đọc Hiểu Bài 37",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7955,
+            "name": "Ngữ Pháp Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7956,
+                "name": "Bài 37 phần 1 : Giới thiệu Thể bị động - A は B に V (bị động)",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7957,
+                "name": "Bài 37 phần 2 : A は B に V(bị động). - Tôi bị anh Tanaka gọi lại",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7958,
+                "name": "Bài 37 phần 3 : A は B に 物/こと を V( bị động) - Tôi bị tên trộm lấy mất chiếc túi.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7959,
+                "name": "Bài 37 phần 4 : 物/こと  は/ が V (bị động) - Tháp Tokyo được xây dựng vào năm 1958.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7960,
+                "name": "Bài 37 phần 5 : A は B に によって、V (bị động) - Iphone được phát minh bởi Steve Jobs",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7961,
+                "name": "Bài 37 phần 6 : Nguyên liệu から/ Vật liệuで～ V (bị động) - Rượu vang được làm từ quả nho.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7941,
+            "name": "Nghe Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7942,
+                "name": "Nghe Hiểu Bài 37",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7945,
+            "name": "Luyện Tập",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7946,
+                "name": "Bài tập bài 37",
+                "type": 3,
+                "exercise_id": 2502,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7947,
+            "name": "Kaiwa",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7948,
+                "name": "金閣寺は14世紀に建てられました",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7949,
+                "name": "luyện giao tiếp 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 7968,
+        "name": "BÀI 38 : Danh từ hóa động từ",
+        "type": 4,
+        "exercise_id": 0,
+        "children": [
+          {
+            "id": 7989,
+            "name": "Từ Vựng Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7990,
+                "name": "Bài 38 Phần 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7991,
+                "name": "Bài 38 Phần 2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7992,
+                "name": "Bài 38 Phần 3",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7993,
+                "name": "Bai 38",
+                "type": 2,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7994,
+                "name": "Bài 38 - Từ Vựng N4",
+                "type": 3,
+                "exercise_id": 7113,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7978,
+            "name": "Kanji",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7979,
+                "name": "Kanji bài 38.1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7980,
+                "name": "Kanji bài 38.2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7981,
+                "name": "Flash card - Bài 38",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7982,
+                "name": "Bài tập N4 Kanji: Bài 38",
+                "type": 3,
+                "exercise_id": 3278,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7983,
+            "name": "Ngữ Pháp Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7984,
+                "name": "Bài 38 phần 1 : Vる のは Tính từ です - Việc viết chữ Hán thì rất khó.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7985,
+                "name": "Bài 38 phần 2 : VるのがTính từ です - Tôi thích việc xem đá bóng.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7986,
+                "name": "Bài 38 phần 3 : Vるのを忘れました - Tôi quên việc đóng cửa sổ.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7987,
+                "name": "Bài 38 phần 4: Vるのを知っていますか - Bạn có biết ở Nhật con gái tặng chocolate cho con trai vào Valentine?",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7988,
+                "name": "Bài 38 phần 5 : Thể thông thường のは Nです - Nơi tôi sinh ra là Hải Dương.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7971,
+            "name": "Đọc Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7972,
+                "name": "Đọc Hiểu Bài 38",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7969,
+            "name": "Nghe Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7970,
+                "name": "Nghe Hiểu Bài 38",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7973,
+            "name": "Luyện Tập",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7974,
+                "name": "Bài tập bài 38",
+                "type": 3,
+                "exercise_id": 2505,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7975,
+            "name": "Kaiwa",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7976,
+                "name": "片づけるのが好きなんです",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7977,
+                "name": "luyện giao tiếp 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 7995,
+        "name": "BÀI 39 : Mẫu câu về nguyên nhân và kết quả",
+        "type": 4,
+        "exercise_id": 0,
+        "children": [
+          {
+            "id": 8016,
+            "name": "Từ Vựng Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8017,
+                "name": "Bài 39 Phần 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8018,
+                "name": "Bài 39 Phần 2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8019,
+                "name": "Bài 39 Phần 3",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8020,
+                "name": "Bai 39",
+                "type": 2,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8021,
+                "name": "Bài 39 - Từ Vựng N4",
+                "type": 3,
+                "exercise_id": 7114,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 7996,
+            "name": "Kanji",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 7997,
+                "name": "Kanji bài 39.1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7998,
+                "name": "Kanji bài 39.2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 7999,
+                "name": "Flash card - Bài 39",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8000,
+                "name": "Bài tập N4 Kanji: Bài 39",
+                "type": 3,
+                "exercise_id": 3279,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8010,
+            "name": "Ngữ Pháp Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8011,
+                "name": "Bài 39 phần 1 : Vて/Vなくて、～ - Vì gặp mặt rồi nên tôi thấy thất vọng.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8012,
+                "name": "Bài 39 phần 2 : Aくて/Aで、～ - Vì cay nên tôi không thể ăn được.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8013,
+                "name": "Bài 39 phần 3 : Nで～ - Vì động đất nên nhiều nhà bị hư hại.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8014,
+                "name": "Bài 39 phần 4 : 普通形ので、〜 - Vì có việc bận nên tôi xin phép về trước.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8015,
+                "name": "Bài 39 phần 5 : Vる/Nの途中で、～ - Trong lúc anh đi về nhà thì gặp mưa ướt hết người.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8003,
+            "name": "Đọc Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8004,
+                "name": "Đọc Hiểu Bài 39",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8001,
+            "name": "Nghe Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8002,
+                "name": "Nghe Hiểu Bài 39",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8005,
+            "name": "Luyện Tập",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8006,
+                "name": "Bài tập bài 39",
+                "type": 3,
+                "exercise_id": 2506,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8007,
+            "name": "Kaiwa",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8008,
+                "name": "遅れて、すみません",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8009,
+                "name": "luyện giao tiếp 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 8022,
+        "name": "Bài 40",
+        "type": 4,
+        "exercise_id": 0,
+        "children": [
+          {
+            "id": 8042,
+            "name": "Từ Vựng Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8043,
+                "name": "Bài 40 Phần 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8044,
+                "name": "Bài 40 Phần 2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8045,
+                "name": "Bài 40 Phần 3",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8046,
+                "name": "Bai 40",
+                "type": 2,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8047,
+                "name": "Bài 40 - Từ Vựng N4",
+                "type": 3,
+                "exercise_id": 7115,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8023,
+            "name": "Kanji",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8024,
+                "name": "Kanji bài 40.1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8025,
+                "name": "Kanji bài 40.2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8026,
+                "name": "Flash card - Bài 40",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8027,
+                "name": "Bài tập N4 Kanji: Bài 40",
+                "type": 3,
+                "exercise_id": 3280,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8038,
+            "name": "Ngữ Pháp Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8039,
+                "name": "Bài 40 phần 1 :  疑問詞～か、〜 - Anh cũng không biết có món gì ngon.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8040,
+                "name": "Bài 40 phần 2 :  ～かどうか、～ - Nên hỏi anh Mira xem anh ấy có thích sushi hay không.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8041,
+                "name": "Bài 40 phần 3 :  Vてみます - Cậu hãy mặc thử xem có vừa hay không.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8030,
+            "name": "Đọc Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8031,
+                "name": "Đọc Hiểu Bài 40",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8028,
+            "name": "Nghe Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8029,
+                "name": "Nghe Hieu Bai 40",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8032,
+            "name": "Luyện Tập",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8033,
+                "name": "Bài luyện tập J",
+                "type": 3,
+                "exercise_id": 2405,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8034,
+                "name": "Bài tập bài 40",
+                "type": 3,
+                "exercise_id": 2490,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8035,
+            "name": "Kaiwa",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8036,
+                "name": "友達ができたかどうか、心配です",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8037,
+                "name": "luyện giao tiếp 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 8048,
+        "name": "Bài 41",
+        "type": 4,
+        "exercise_id": 0,
+        "children": [
+          {
+            "id": 8068,
+            "name": "Từ Vựng Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8069,
+                "name": "Bài 41 Phần 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8070,
+                "name": "Bài 41 Phần 2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8071,
+                "name": "Bài 41 Phần 3",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8072,
+                "name": "Bai 41",
+                "type": 2,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8073,
+                "name": "Bài 41 - Từ Vựng N4",
+                "type": 3,
+                "exercise_id": 7116,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8049,
+            "name": "Kanji",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8050,
+                "name": "Kanji bài 41.1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8051,
+                "name": "Kanji bài 41.2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8052,
+                "name": "Flash card - Bài 41",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8053,
+                "name": "Bài tập N4 Kanji: Bài 41",
+                "type": 3,
+                "exercise_id": 3281,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8063,
+            "name": "Ngữ Pháp Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8064,
+                "name": "Bài 41 phần 1 : いただきます - Tôi đã nhận được khóa học N2 từ giám đốc",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8065,
+                "name": "Bài 41 phần 2 : くださいます - Giám đốc đã tặng tôi 1 cái nồi cơm điện.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8066,
+                "name": "Bài 41 phần 3 : さしあげます / やります - Tôi tặng cho trưởng phòng rượu đắt tiền.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8067,
+                "name": "Bài 41 phần 4 : Vてくださいませんか - Anh có thể viết hộ tôi địa chỉ bằng Tiếng Anh không?",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8056,
+            "name": "Đọc Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8057,
+                "name": "Đọc Hiểu Bài 41",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8054,
+            "name": "Nghe Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8055,
+                "name": "Nghe Hiểu Bài 41",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8058,
+            "name": "Luyện Tập",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8059,
+                "name": "Bài tập bài 41",
+                "type": 3,
+                "exercise_id": 2493,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8060,
+            "name": "Kaiwa",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8061,
+                "name": "ご結婚おめでとうございます",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8062,
+                "name": "luyện giao tiếp 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 75838,
+        "name": "Kiểm tra giữa kỳ (34-41)",
+        "type": 4,
+        "exercise_id": 0,
+        "children": [
+          {
+            "id": 75842,
+            "name": "N4 - Bài kiểm tra giữa kỳ (34-41)",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 75843,
+                "name": "N4 - Bài kiểm tra giữa kỳ (34-41)",
+                "type": 5,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 8074,
+        "name": "Bài 42",
+        "type": 4,
+        "exercise_id": 0,
+        "children": [
+          {
+            "id": 8096,
+            "name": "Từ Vựng Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8097,
+                "name": "Bài 42 Phần 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8098,
+                "name": "Bài 42 Phần 2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8099,
+                "name": "Bài 42 Phần 3",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8100,
+                "name": "Bai 42",
+                "type": 2,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8101,
+                "name": "Bài 42 - Từ Vựng N4",
+                "type": 3,
+                "exercise_id": 7117,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8075,
+            "name": "Kanji",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8076,
+                "name": "Kanji bài 42.1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8077,
+                "name": "Kanji bài 42.2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8078,
+                "name": "Flash card - Bài 42",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8079,
+                "name": "Bài tập N4 Kanji: Bài 42",
+                "type": 3,
+                "exercise_id": 3282,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8090,
+            "name": "Ngữ Pháp Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8091,
+                "name": "Bài 42 phần 1 : ~ ために、～ - Học tiếng Nhật để làm việc tại công ty Nhật.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8092,
+                "name": "Bài 42 phần 2 : ~ に使います。 Ứng dụng này dùng để tra giờ chạy của tàu điện.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8093,
+                "name": "Bài 42 phần 3 : N・Vる の + に、～  - Nhà gần siêu thị nên rất tiện cho việc mua sắm.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8094,
+                "name": "Bài 42 phần 4 : N・Vる の+ に、かかります - Mất 30 phút để nấu cơm tối.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8095,
+                "name": "Bài 42 phần 5 : N ( lượng từ ) は・も～ - Từ nhà đến nhà ga mất ít nhất là 5 phút.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8083,
+            "name": "Đọc Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8084,
+                "name": "Đọc Hiểu Bài 42",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8080,
+            "name": "Nghe Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8081,
+                "name": "Nghe Hiểu Bài 42.1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8082,
+                "name": "Nghe Hiểu Bài 42.2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8085,
+            "name": "Luyện Tập",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8086,
+                "name": "Bài tập bài 42",
+                "type": 3,
+                "exercise_id": 2508,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8087,
+            "name": "Kaiwa",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8088,
+                "name": "luyện giao tiếp 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8089,
+                "name": "ボーナスは何に使いますか",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 8102,
+        "name": "Bài 43",
+        "type": 4,
+        "exercise_id": 0,
+        "children": [
+          {
+            "id": 8121,
+            "name": "Từ Vựng Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8122,
+                "name": "Bài 43 Phần 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8123,
+                "name": "Bài 43 Phần 2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8124,
+                "name": "Bài 43 Phần 3",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8125,
+                "name": "Bai 43",
+                "type": 2,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8126,
+                "name": "Bài 43 - Từ Vựng N4",
+                "type": 3,
+                "exercise_id": 7118,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8103,
+            "name": "Kanji",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8104,
+                "name": "Kanji bài 43.1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8105,
+                "name": "Kanji bài 43.2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8106,
+                "name": "Flash card - Bài 43",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8107,
+                "name": "Bài tập N4 Kanji: Bài 43",
+                "type": 3,
+                "exercise_id": 3283,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8110,
+            "name": "Đọc Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8111,
+                "name": "Đọc Hiểu Bài 43",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8117,
+            "name": "Ngữ Pháp Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8118,
+                "name": "Bài 43 phần 1 : ~ そうです - Trời có vẻ sắp mưa rồi đó.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8119,
+                "name": "Bài 43 phần 2 : A bỏ い / な ＋そうです - Món Sushi này trông có vẻ ngon đấy.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8120,
+                "name": "Bài 43 phần 3 : ＜場所＞で V てきます - Đi mua cà phê ở Combini rồi quay lại.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8108,
+            "name": "Nghe Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8109,
+                "name": "Nghe Hiểu Bài 43",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8112,
+            "name": "Luyện Tập",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8113,
+                "name": "Bài tập bài 43",
+                "type": 3,
+                "exercise_id": 2509,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8114,
+            "name": "Kaiwa",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8115,
+                "name": "毎日楽しそうです",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8116,
+                "name": "luyện giao tiếp 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 8127,
+        "name": "Bài 44",
+        "type": 4,
+        "exercise_id": 0,
+        "children": [
+          {
+            "id": 8148,
+            "name": "Từ Vựng Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8149,
+                "name": "Bài 44 Phần 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8150,
+                "name": "Bài 44 Phần 2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8151,
+                "name": "Bài 44 Phần 3",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8152,
+                "name": "Bai 44",
+                "type": 2,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8153,
+                "name": "Bài 44 - Từ Vựng N4",
+                "type": 3,
+                "exercise_id": 7119,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8128,
+            "name": "Kanji",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8129,
+                "name": "Kanji bài 44.1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8130,
+                "name": "Kanji bài 44.2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8131,
+                "name": "Flash card - Bài 44",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8132,
+                "name": "Bài tập N4 Kanji: Bài 44",
+                "type": 3,
+                "exercise_id": 3284,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8142,
+            "name": "Ngữ Pháp Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8143,
+                "name": "Bài 44 phần 1 : 〜すぎます - Đã uống quá nhiều rượu",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8144,
+                "name": "Bài 44 phần 2 : ~ やすい / にくいです - Cái nồi cơm điện này dễ sử dụng.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8145,
+                "name": "Bài 44 phần 3 : ~ にします - Giữ trật tự nhé.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8146,
+                "name": "Bài 44 phần 4 : Nします - Tôi chọn bia tươi.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8147,
+                "name": "Bài 44 phần 5 : Aくに＋V ~ - Hãy dọn sạch mặt bàn.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8135,
+            "name": "Đọc Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8136,
+                "name": "Đọc Hiểu Bài 44",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8133,
+            "name": "Nghe Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8134,
+                "name": "Nghe Hiểu Bài 44",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8137,
+            "name": "Luyện Tập",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8138,
+                "name": "Bài tập bài 44",
+                "type": 3,
+                "exercise_id": 2510,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8139,
+            "name": "Kaiwa",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8140,
+                "name": "この写真みたいにしてください",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8141,
+                "name": "luyện giao tiếp 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 8154,
+        "name": "Bài 45",
+        "type": 4,
+        "exercise_id": 0,
+        "children": [
+          {
+            "id": 8175,
+            "name": "Từ Vựng Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8176,
+                "name": "Bài 45 Phần 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8177,
+                "name": "Bài 45 Phần 2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8178,
+                "name": "Bài 45 Phần 3",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8179,
+                "name": "Bai 45",
+                "type": 2,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8180,
+                "name": "Bài 45 - Từ Vựng N4",
+                "type": 3,
+                "exercise_id": 7120,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8155,
+            "name": "Kanji",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8156,
+                "name": "Kanji bài 45.1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8157,
+                "name": "Kanji bài 45.2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8158,
+                "name": "Flash card - Bài 45",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8159,
+                "name": "Bài tập N4 Kanji: Bài 45",
+                "type": 3,
+                "exercise_id": 3285,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8170,
+            "name": "Ngữ Pháp Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8171,
+                "name": "Bài 45 phần 1 : 〜場合は、〜 - Trường hợp bị cúm thì hãy uống thuốc này.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8172,
+                "name": "Bài 45 phần 2 : Luyện tập 場合は - Trường hợp bị cúm thì hãy uống thuốc này.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8173,
+                "name": "Bài 45 phần 3 : 〜のに、〜 - Thầy Tuyền ăn nhiều ấy vậy mà vẫn gầy.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8174,
+                "name": "Bài 45 phần 4 : Luyện tập のに、〜 - Thầy Tuyền ăn nhiều ấy vậy mà vẫn gầy.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8162,
+            "name": "Đọc Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8163,
+                "name": "Đọc Hiểu Bài 45",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8160,
+            "name": "Nghe Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8161,
+                "name": "Nghe Hiểu Bài 45",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8164,
+            "name": "Luyện Tập",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8165,
+                "name": "Bài luyện tập K",
+                "type": 3,
+                "exercise_id": 2406,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8166,
+                "name": "Bài tập bài 45",
+                "type": 3,
+                "exercise_id": 2511,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8167,
+            "name": "Kaiwa",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8168,
+                "name": "コースをまちがえた場合は、どうしたらいいですか",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8169,
+                "name": "luyện giao tiếp 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 8181,
+        "name": "Bài 46",
+        "type": 4,
+        "exercise_id": 0,
+        "children": [
+          {
+            "id": 8200,
+            "name": "Từ Vựng Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8201,
+                "name": "Bài 46 Phần 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8202,
+                "name": "Bài 46 Phần 2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8203,
+                "name": "Bai 46",
+                "type": 2,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8204,
+                "name": "Bài 46 - Từ Vựng N4",
+                "type": 3,
+                "exercise_id": 7121,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8182,
+            "name": "Kanji",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8183,
+                "name": "Kanji Bài 46.1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8184,
+                "name": "Kanji Bài 46.2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8185,
+                "name": "Flash card - Bài 46",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8186,
+                "name": "Bài tập N4 Kanji: Bài 46",
+                "type": 3,
+                "exercise_id": 3287,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8196,
+            "name": "Ngữ Pháp Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8197,
+                "name": "Bài 46 phần 1 : ところです - Từ bây giờ mình chuẩn bị đi tới nhà ăn đây.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8198,
+                "name": "Bài 46 phần 2 : Vたばかりです - Tôi vừa mới đến Nhật tuần trước nên không biết.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8199,
+                "name": "Bài 46 phần 3 : 〜はずです - Anh Linh chắc chắn giỏi Tiếng Nhật.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8189,
+            "name": "Đọc Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8190,
+                "name": "Đọc Hiểu Bài 46",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8187,
+            "name": "Nghe Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8188,
+                "name": "Nghe Hiểu Bài 46",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8191,
+            "name": "Luyện tập",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8192,
+                "name": "Bài tập bài 46",
+                "type": 3,
+                "exercise_id": 2512,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8193,
+            "name": "Kaiwa",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8194,
+                "name": "luyện giao tiếp 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8195,
+                "name": "先週直してもらったばかりなのに、また…",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 8205,
+        "name": "Bài 47",
+        "type": 4,
+        "exercise_id": 0,
+        "children": [
+          {
+            "id": 8223,
+            "name": "Từ Vựng Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8224,
+                "name": "Bài 47 Phần 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8225,
+                "name": "Bài 47 Phần 2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8226,
+                "name": "Bài 47 Phần 3",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8227,
+                "name": "Bai 47",
+                "type": 2,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8228,
+                "name": "Bài 47 - Từ Vựng N4",
+                "type": 3,
+                "exercise_id": 7122,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8206,
+            "name": "Kanji",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8207,
+                "name": "Kanji Bài 47.1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8208,
+                "name": "Kanji Bài 47.2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8209,
+                "name": "Flash card - Bài 47",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8210,
+                "name": "Bài tập N4 Kanji: Bài 47",
+                "type": 3,
+                "exercise_id": 3286,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8220,
+            "name": "Ngữ Pháp Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8221,
+                "name": "Bài 47 Phần 1 : Thể thông thường + そうです - Theo dự báo thời tiết thì nghe nói hôm nay trời mưa.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8222,
+                "name": "Bài 47 Phần 2 : Thể thông thường + ようです - Hình như ai đó đang nấu ăn.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8213,
+            "name": "Đọc Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8214,
+                "name": "Đọc Hiểu Bài 47",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8211,
+            "name": "Nghe Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8212,
+                "name": "Nghe Hiểu Bài 47",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8215,
+            "name": "Luyện tập",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8216,
+                "name": "Bài tập bài 47",
+                "type": 3,
+                "exercise_id": 2515,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8217,
+            "name": "Kaiwa",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8218,
+                "name": "luyện giao tiếp 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8219,
+                "name": "婚約したそうです",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 8229,
+        "name": "Bài 48",
+        "type": 4,
+        "exercise_id": 0,
+        "children": [
+          {
+            "id": 8249,
+            "name": "Từ Vựng Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8250,
+                "name": "Bài 48 Phần 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8251,
+                "name": "Bài 48 Phần 2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8252,
+                "name": "Bai 48",
+                "type": 2,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8253,
+                "name": "Bài 48 - Từ Vựng N4",
+                "type": 3,
+                "exercise_id": 7123,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8230,
+            "name": "Kanji",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8231,
+                "name": "Kanji Bài 48.1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8232,
+                "name": "Kanji Bài 48.2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8233,
+                "name": "Flash card - Bài 48",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8234,
+                "name": "Bài tập N4 Kanji: Bài 48",
+                "type": 3,
+                "exercise_id": 3288,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8244,
+            "name": "Ngữ Pháp Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8245,
+                "name": "Bài 48 phần 1 : Giới thiệu Thể sai khiến - は N(人)をV (さ)せます - Cho con đi du học Nhật.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8246,
+                "name": "Bài 48 phần 2 : 〜は N(人）に Nを V(さ)せます - Mẹ bắt con gái dọn dẹp căn phòng.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8247,
+                "name": "Bài 48 phần 3 : V(さ)せていただけませんか - Cho phép tôi phát biểu đôi lời có được không ạ?",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8248,
+                "name": "Bài 48 phần 4 : V(さ)せていただきます - Tôi xin phép được phát biểu đôi lời.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8237,
+            "name": "Đọc Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8238,
+                "name": "Đọc Hiểu Bài 48",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8235,
+            "name": "Nghe Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8236,
+                "name": "Nghe Hiểu Bài 48",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8239,
+            "name": "Luyện tập",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8240,
+                "name": "Bài tập bài 48",
+                "type": 3,
+                "exercise_id": 2516,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8241,
+            "name": "Kaiwa",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8242,
+                "name": "luyện giao tiếp 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8243,
+                "name": "休ませていただけませんか",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 8254,
+        "name": "Bài 49",
+        "type": 4,
+        "exercise_id": 0,
+        "children": [
+          {
+            "id": 8275,
+            "name": "Từ Vựng Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8276,
+                "name": "Bài 49 Phần 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8277,
+                "name": "Bài 49 Phần 2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8278,
+                "name": "Bài 49 Phần 3",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8279,
+                "name": "Bai 49",
+                "type": 2,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8280,
+                "name": "Bài 49 - Từ Vựng N4",
+                "type": 3,
+                "exercise_id": 7124,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8255,
+            "name": "Kanji",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8256,
+                "name": "Kanji Bài 49.1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8257,
+                "name": "Kanji Bài 49.2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8258,
+                "name": "Flash card - Bài 49",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8259,
+                "name": "Bài tập N4 Kanji: Bài 49",
+                "type": 3,
+                "exercise_id": 3289,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8269,
+            "name": "Ngữ Pháp Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8270,
+                "name": "Bài 49 phần 1 : Giới thiệu về kính ngữ - Tôn kính ngữ với Thể bị động",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8271,
+                "name": "Bài 49 phần 2 : Tôn kính ngữ おVます ＋ に なります。",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8272,
+                "name": "Bài 49 phần 3 : Những tôn kính ngữ đặc biệt - Giám Đốc có biết ngày mai có cuộc họp không ạ?",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8273,
+                "name": "Bài 49 phần 4 : おVます / ごN ＋ください - Xin hãy đợi một chút ạ.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8274,
+                "name": "Bài 49 phần 5 : おVます / ごN ＋ですか - Cách dùng của kính ngữ お、ご",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8262,
+            "name": "Đọc Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8263,
+                "name": "Đọc Hiểu Bài 49",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8260,
+            "name": "Nghe Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8261,
+                "name": "Nghe Hiểu 49",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8264,
+            "name": "Luyện tập",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8265,
+                "name": "Bài tập bài 49",
+                "type": 3,
+                "exercise_id": 2517,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8266,
+            "name": "Kaiwa",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8267,
+                "name": "よろしくお伝えください",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8268,
+                "name": "luyện giao tiếp 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 8281,
+        "name": "Bài 50",
+        "type": 4,
+        "exercise_id": 0,
+        "children": [
+          {
+            "id": 8302,
+            "name": "Từ Vựng Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8303,
+                "name": "Bài 50 Phần 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8304,
+                "name": "Bài 50 Phần 2",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8306,
+                "name": "Bai 50",
+                "type": 2,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8307,
+                "name": "Bài 50 - Từ Vựng N4",
+                "type": 3,
+                "exercise_id": 7125,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8282,
+            "name": "Kanji",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8283,
+                "name": "Kanji bài 50",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8296,
+            "name": "Ngữ Pháp Cải Thiện",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8297,
+                "name": "Bài 50 phần 1 : Khiêm nhường ngữ - おVます ＋ します/ いたします。",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8298,
+                "name": "Bài 50 phần 2 : ごN + します/ いたします - Em biết chỗ ăn ngon, em sẽ chỉ cho anh ạ.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8299,
+                "name": "Bài 50 phần 3 : Những khiêm nhường ngữ đặc biệt - Nhất định em sẽ đến ạ.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8300,
+                "name": "Bài 50 phần 4 : Thể lịch sự 丁寧語 - Nhà vệ sinh ở phía kia ạ.",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8301,
+                "name": "Bài 50 phần 5 : Bonus - Luyện tập tôn kính ngữ và khiêm nhường ngữ!",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8286,
+            "name": "Đọc Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8287,
+                "name": "Đọc Hiểu Bài 50",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8284,
+            "name": "Nghe Hiểu",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8285,
+                "name": "Nghe Hiểu Bài 50",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8288,
+            "name": "Luyện tập",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8289,
+                "name": "Bài luyện tập L",
+                "type": 3,
+                "exercise_id": 2407,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8290,
+                "name": "Bài luyện tập tổng hợp 2",
+                "type": 3,
+                "exercise_id": 2408,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8291,
+                "name": "Bài luyện tập tổng hợp kiến thức N4",
+                "type": 3,
+                "exercise_id": 2409,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8292,
+                "name": "Bài tập bài 50",
+                "type": 3,
+                "exercise_id": 2518,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          },
+          {
+            "id": 8293,
+            "name": "Kaiwa",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 8294,
+                "name": "心から感謝いたします",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              },
+              {
+                "id": 8295,
+                "name": "luyện giao tiếp 1",
+                "type": 1,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 75839,
+        "name": "Kiểm tra cuối kỳ (42-50)",
+        "type": 4,
+        "exercise_id": 0,
+        "children": [
+          {
+            "id": 75844,
+            "name": "N4 - Bài kiểm tra cuối kỳ (42-50)",
+            "type": 4,
+            "exercise_id": 0,
+            "children": [
+              {
+                "id": 75845,
+                "name": "N4 - Bài kiểm tra cuối kỳ (42-50)",
+                "type": 5,
+                "exercise_id": 0,
+                "is_complete": 0,
+                "trial_study": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
