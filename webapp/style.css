@@ -2,7 +2,7 @@
    iLearn - E-Learning Commerce UI Design System
    Exact Figma Design Implementation (Nodes 7411:13738 & 4133:2948)
    Deep Slate Dark Surface + Brand Purple (#5537EA) + Accent Pink (#EF77D3)
-   100% Vector SVG Linear Icons + Enhanced Progress & Sync Dashboard
+   100% Vector SVG Linear Icons + Authentication Gate & Realtime Cloud Sync
 ============================================================ */
 
 *, *::before, *::after {
@@ -118,6 +118,141 @@ html, body {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   padding-bottom: 40px;
+}
+
+/* ============================================================
+   SCREEN 0: AUTHENTICATION / ACCESS GATE (Bảo mật Đăng nhập)
+============================================================ */
+#screen-auth {
+  background: radial-gradient(circle at 50% 30%, #1E1F35 0%, #10111A 100%);
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.auth-wrapper {
+  width: 100%;
+  max-width: 440px;
+}
+.auth-card {
+  background: var(--color-surface);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: 36px 32px;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  overflow: hidden;
+}
+.auth-card::before {
+  content: '';
+  position: absolute;
+  top: -60px; right: -60px;
+  width: 160px; height: 160px;
+  background: radial-gradient(circle, var(--color-primary-glow) 0%, transparent 70%);
+  pointer-events: none;
+}
+.auth-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.auth-logo-badge {
+  width: 60px; height: 60px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary-pink) 100%);
+  color: #FFFFFF;
+  font-size: 28px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  box-shadow: 0 8px 24px var(--color-primary-glow);
+}
+.auth-title {
+  font-size: 24px;
+  font-weight: 900;
+  color: #FFFFFF;
+  letter-spacing: -0.3px;
+  margin-bottom: 6px;
+}
+.auth-desc {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.auth-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.auth-input-group label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-text-secondary);
+}
+.input-with-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.input-with-icon svg {
+  position: absolute;
+  left: 14px;
+  color: var(--color-text-dim);
+  pointer-events: none;
+}
+.input-with-icon input {
+  width: 100%;
+  background: var(--color-surface-secondary);
+  border: 1.5px solid var(--color-border);
+  color: #FFFFFF;
+  font-size: 14px;
+  font-family: inherit;
+  padding: 12px 14px 12px 42px;
+  border-radius: var(--radius-md);
+  transition: all var(--transition);
+}
+.input-with-icon input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-primary-glow);
+  background: #181A24;
+}
+.btn-auth-submit {
+  padding: 14px;
+  background: var(--color-primary);
+  border: none;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 800;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-family: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 4px 16px var(--color-primary-glow);
+  transition: all var(--transition);
+  margin-top: 6px;
+}
+.btn-auth-submit:hover { background: var(--color-primary-hover); transform: translateY(-2px); }
+.btn-auth-submit:active { transform: translateY(1px); }
+
+.auth-footer-note {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--color-border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--color-text-dim);
 }
 
 /* ============================================================
@@ -245,6 +380,31 @@ html, body {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+/* Cloud sync badge */
+.cloud-sync-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: var(--radius-pill);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-success);
+}
+.cloud-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--color-success);
+  box-shadow: 0 0 8px var(--color-success);
+  animation: syncPulse 2s infinite;
+}
+@keyframes syncPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.8); }
 }
 
 .btn-header-action, .btn-header-back {
@@ -1421,6 +1581,47 @@ html, body {
 .btn-modal-close { background: none; border: none; color: var(--color-text-muted); font-size: 20px; font-weight: 700; cursor: pointer; }
 .modal-body { padding: 24px; display: flex; flex-direction: column; gap: 20px; }
 
+/* ACCOUNT PROFILE CARD IN SETTINGS */
+.account-info-box {
+  background: var(--color-surface-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.account-avatar {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: var(--color-primary-tint);
+  border: 1.5px solid var(--color-primary);
+  color: var(--color-primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.account-details { flex: 1; min-width: 120px; }
+.account-name { font-size: 15px; font-weight: 800; color: #FFFFFF; }
+.account-status { font-size: 12px; color: var(--color-success); font-weight: 600; }
+.btn-logout {
+  background: rgba(230, 75, 86, 0.12);
+  border: 1px solid rgba(230, 75, 86, 0.3);
+  color: var(--color-error);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 7px 14px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  font-family: inherit;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all var(--transition);
+}
+.btn-logout:hover { background: var(--color-error); color: #FFFFFF; }
+
 /* PROGRESS STATS & SYNC MODAL */
 .progress-stats-grid {
   display: grid;
@@ -1478,20 +1679,6 @@ html, body {
   transition: all var(--transition);
 }
 .btn-sync-action:hover { background: var(--color-primary); border-color: var(--color-primary); }
-
-.import-box { display: flex; flex-direction: column; gap: 6px; }
-.import-label { font-size: 13px; font-weight: 700; color: var(--color-text-secondary); }
-.import-input-row { display: flex; gap: 8px; }
-.btn-sync-import {
-  padding: 10px 18px;
-  background: var(--color-primary);
-  border: none; color: #FFFFFF;
-  font-size: 13px; font-weight: 800;
-  border-radius: var(--radius-md);
-  cursor: pointer; font-family: inherit;
-  white-space: nowrap;
-}
-.btn-sync-import:hover { background: var(--color-primary-hover); }
 
 /* SETTINGS MODAL */
 .setting-row { display: flex; flex-direction: column; gap: 6px; }

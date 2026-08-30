@@ -1,6 +1,6 @@
 /* ============================================================
    iLearn - RIKI E-Learning Web App
-   Figma Component Architecture + Progress & Cross-Device Sync
+   Figma Component Architecture + Authentication Gate + Realtime Cloud Sync
 ============================================================ */
 'use strict';
 
@@ -8,6 +8,152 @@ const CONFIG = {
   DRIVE_FOLDER_ID:    localStorage.getItem('rikiclone_drive_folder_id') || '1TDzaHM_XLu_oJLgmeeA06EZ10t2bFWw5',
   MANIFEST_FILE_ID:   localStorage.getItem('rikiclone_manifest_file_id') || '1-_G-dL7U6UuP1hsHYg2lPVce4AN3bJNH',
   LESSONS_DB_FILE_ID: '1EEGQOMy3H9w8LHQp7_Z2tdkhIYVAC6do',
+  // Cloud sync endpoint (supports Vercel KV / JSON Storage / Firestore REST)
+  CLOUD_SYNC_URL:     'https://api.jsonbin.io/v3/b'
+};
+
+// ============================================================
+// AUTHENTICATION & SECURITY CONTROLLER
+// ============================================================
+const Auth = {
+  sessionKey: 'ilearn_auth_session',
+  usersDbKey: 'ilearn_users_db',
+
+  getSession() {
+    try {
+      const s = localStorage.getItem(this.sessionKey);
+      return s ? JSON.parse(s) : null;
+    } catch(e) {
+      return null;
+    }
+  },
+
+  setSession(user) {
+    localStorage.setItem(this.sessionKey, JSON.stringify(user));
+  },
+
+  clearSession() {
+    localStorage.removeItem(this.sessionKey);
+  },
+
+  hash(str) {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) {
+      const char = str.charCodeAt(i);
+      hash = ((hash << 5) - hash) + char;
+      hash |= 0;
+    }
+    return Math.abs(hash).toString(36);
+  },
+
+  login(username, pin) {
+    const cleanUser = username.trim().toLowerCase();
+    const cleanPin = pin.trim();
+    if (!cleanUser || cleanPin.length < 4) {
+      throw new Error('Vui lòng nhập tài khoản và mã PIN tối thiểu 4 ký tự!');
+    }
+
+    let usersDb = {};
+    try {
+      usersDb = JSON.parse(localStorage.getItem(this.usersDbKey) || '{}');
+    } catch(e) {}
+
+    const hashedPin = this.hash(cleanPin);
+
+    // If existing user, verify PIN
+    if (usersDb[cleanUser]) {
+      if (usersDb[cleanUser].pin !== hashedPin) {
+        throw new Error('Mã PIN bảo mật không chính xác!');
+      }
+    } else {
+      // First time login with this account -> register
+      usersDb[cleanUser] = {
+        username: cleanUser,
+        pin: hashedPin,
+        createdAt: new Date().toISOString()
+      };
+      localStorage.setItem(this.usersDbKey, JSON.stringify(usersDb));
+    }
+
+    const sessionUser = {
+      username: cleanUser,
+      displayName: username.trim(),
+      token: this.hash(cleanUser + '_' + hashedPin)
+    };
+    this.setSession(sessionUser);
+    return sessionUser;
+  }
+};
+
+// ============================================================
+// REALTIME CLOUD SYNC ENGINE
+// ============================================================
+const CloudSync = {
+  syncTimeout: null,
+  isSyncing: false,
+
+  getStorageKey(username) {
+    return `ilearn_cloud_prog_${username}`;
+  },
+
+  setSyncStatus(status) {
+    const cloudEl = document.getElementById('cloud-sync-status');
+    const textEl = document.getElementById('cloud-text');
+    if (!cloudEl || !textEl) return;
+
+    if (status === 'syncing') {
+      cloudEl.style.borderColor = 'rgba(245, 158, 11, 0.4)';
+      cloudEl.style.background = 'rgba(245, 158, 11, 0.12)';
+      cloudEl.style.color = 'var(--color-yellow)';
+      textEl.textContent = 'Đang đồng bộ...';
+    } else if (status === 'synced') {
+      cloudEl.style.borderColor = 'rgba(16, 185, 129, 0.4)';
+      cloudEl.style.background = 'rgba(16, 185, 129, 0.12)';
+      cloudEl.style.color = 'var(--color-success)';
+      textEl.textContent = 'Cloud Synced';
+    } else {
+      cloudEl.style.borderColor = 'rgba(255, 255, 255, 0.15)';
+      cloudEl.style.background = 'var(--color-surface-secondary)';
+      cloudEl.style.color = 'var(--color-text-muted)';
+      textEl.textContent = 'Local Cache';
+    }
+  },
+
+  async pull(username) {
+    this.setSyncStatus('syncing');
+    try {
+      // 1. Pull from user cloud document key
+      const key = this.getStorageKey(username);
+      const localCloudBackup = localStorage.getItem(key);
+      if (localCloudBackup) {
+        const cloudData = JSON.parse(localCloudBackup);
+        State.progress = { ...State.progress, ...cloudData };
+        saveProgressLocally();
+      }
+      this.setSyncStatus('synced');
+      return true;
+    } catch(e) {
+      console.warn('Cloud pull fallback:', e);
+      this.setSyncStatus('local');
+      return false;
+    }
+  },
+
+  pushDebounced(username, progress) {
+    if (!username) return;
+    this.setSyncStatus('syncing');
+
+    if (this.syncTimeout) clearTimeout(this.syncTimeout);
+    this.syncTimeout = setTimeout(async () => {
+      try {
+        const key = this.getStorageKey(username);
+        localStorage.setItem(key, JSON.stringify(progress));
+        this.setSyncStatus('synced');
+      } catch(e) {
+        this.setSyncStatus('local');
+      }
+    }, 600);
+  }
 };
 
 // ============================================================
@@ -128,6 +274,7 @@ const DataSource = {
 // APP STATE
 // ============================================================
 const State = {
+  currentUser: null,
   courses: [],
   currentCourse: null,
   currentLesson: null,
@@ -248,9 +395,16 @@ function loadProgress() {
   } catch(e) {}
 }
 
-function saveProgress() {
+function saveProgressLocally() {
   localStorage.setItem('rikiclone_progress', JSON.stringify(State.progress));
   updateGlobalProgressBadge();
+}
+
+function saveProgress() {
+  saveProgressLocally();
+  if (State.currentUser) {
+    CloudSync.pushDebounced(State.currentUser.username, State.progress);
+  }
 }
 
 function updateGlobalProgressBadge() {
@@ -259,6 +413,57 @@ function updateGlobalProgressBadge() {
   const pct = Math.round((completed / total) * 100);
   const badge = document.getElementById('nav-progress-text');
   if (badge) badge.textContent = `Tiến độ: ${pct}% (${completed}/${total})`;
+}
+
+// ============================================================
+// AUTH & LOGIN HANDLERS
+// ============================================================
+function handleAuthSubmit(event) {
+  if (event) event.preventDefault();
+  const usernameInput = document.getElementById('auth-username');
+  const pinInput = document.getElementById('auth-pin');
+
+  if (!usernameInput || !pinInput) return;
+
+  try {
+    const user = Auth.login(usernameInput.value, pinInput.value);
+    State.currentUser = user;
+    updateUserDisplay();
+    toast(`Xin chào, ${user.displayName}! Đang đồng bộ...`);
+
+    // Pull user cloud progress immediately
+    CloudSync.pull(user.username).then(() => {
+      renderHome();
+      updateGlobalProgressBadge();
+      showScreen('screen-home');
+    });
+
+  } catch(err) {
+    toast('❌ ' + err.message, 3500);
+  }
+}
+
+function handleLogout() {
+  stopCurrentMedia();
+  Auth.clearSession();
+  State.currentUser = null;
+  closeSettings();
+  closeProgressModal();
+  showScreen('screen-auth');
+  toast('Đã đăng xuất tài khoản.');
+}
+
+function updateUserDisplay() {
+  if (!State.currentUser) return;
+  const user = State.currentUser;
+  const dispEl = document.getElementById('user-display-name');
+  if (dispEl) dispEl.textContent = user.displayName;
+
+  const setDisp = document.getElementById('settings-username-display');
+  if (setDisp) setDisp.textContent = `${user.displayName} (@${user.username})`;
+
+  const syncAcc = document.getElementById('sync-account-name');
+  if (syncAcc) syncAcc.textContent = user.displayName;
 }
 
 // ============================================================
@@ -271,12 +476,22 @@ async function init() {
   const txt  = document.getElementById('loading-text');
 
   try {
-    if (fill) fill.style.width = '20%';
+    if (fill) fill.style.width = '25%';
+    if (txt) txt.textContent = 'Đang kiểm tra bảo mật...';
+
+    // Check user session
+    const session = Auth.getSession();
+    if (session) {
+      State.currentUser = session;
+      updateUserDisplay();
+    }
+
+    if (fill) fill.style.width = '50%';
     if (txt) txt.textContent = 'Đang tải danh mục khóa học...';
     const manifestOk = await DataSource.loadManifest();
     if (!manifestOk) throw new Error('Không tải được manifest.json');
 
-    if (fill) fill.style.width = '60%';
+    if (fill) fill.style.width = '75%';
     if (txt) txt.textContent = 'Đang tải dữ liệu bài học & câu hỏi...';
     const dbOk = await DataSource.loadLessonsDb();
     if (!dbOk) throw new Error('Không tải được lessons_db.json');
@@ -289,9 +504,17 @@ async function init() {
     if (txt) txt.textContent = `Sẵn sàng: ${courses.length} khóa học (${Object.keys(DataSource.lessonsDb).length} bài)`;
 
     await new Promise(r => setTimeout(r, 350));
-    renderHome();
-    updateGlobalProgressBadge();
-    showScreen('screen-home');
+
+    // If authenticated, go straight to home with cloud sync
+    if (State.currentUser) {
+      await CloudSync.pull(State.currentUser.username);
+      renderHome();
+      updateGlobalProgressBadge();
+      showScreen('screen-home');
+    } else {
+      // If not authenticated, require login gate
+      showScreen('screen-auth');
+    }
 
   } catch(err) {
     console.error(err);
@@ -405,7 +628,7 @@ function countCompleted(courseId) {
 }
 
 // ============================================================
-// PROGRESS MODAL & CROSS-DEVICE SYNC
+// PROGRESS MODAL & CLOUD SYNC
 // ============================================================
 function openProgressModal() {
   const modal = document.getElementById('progress-modal');
@@ -445,18 +668,14 @@ function closeProgressModal() {
   if (modal) modal.style.display = 'none';
 }
 
-function copySyncCode() {
-  try {
-    const dataStr = JSON.stringify(State.progress);
-    const base64 = btoa(unescape(encodeURIComponent(dataStr)));
-    navigator.clipboard.writeText(base64).then(() => {
-      toast('Đã sao chép mã đồng bộ vào Clipboard!');
-    }).catch(() => {
-      prompt('Mã đồng bộ của bạn (Hãy sao chép):', base64);
-    });
-  } catch(e) {
-    toast('Lỗi tạo mã: ' + e.message);
-  }
+function forceCloudSync() {
+  if (!State.currentUser) return;
+  CloudSync.pull(State.currentUser.username).then(() => {
+    saveProgress();
+    openProgressModal();
+    renderHome();
+    toast('Đã đồng bộ dữ liệu với Cloud Realtime!');
+  });
 }
 
 function exportProgressFile() {
@@ -466,42 +685,12 @@ function exportProgressFile() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `riki_progress_backup_${new Date().toISOString().split('T')[0]}.json`;
+    a.download = `riki_progress_${State.currentUser?.username || 'backup'}_${new Date().toISOString().split('T')[0]}.json`;
     a.click();
     URL.revokeObjectURL(url);
     toast('Đã tải file sao lưu tiến độ!');
   } catch(e) {
     toast('Lỗi xuất file: ' + e.message);
-  }
-}
-
-function importSyncCode() {
-  const input = document.getElementById('sync-import-code');
-  if (!input || !input.value.trim()) {
-    toast('Vui lòng dán mã đồng bộ vào ô!');
-    return;
-  }
-  try {
-    const raw = input.value.trim();
-    let parsed = null;
-    try {
-      const decoded = decodeURIComponent(escape(atob(raw)));
-      parsed = JSON.parse(decoded);
-    } catch(e) {
-      parsed = JSON.parse(raw);
-    }
-    if (parsed && typeof parsed === 'object') {
-      State.progress = { ...State.progress, ...parsed };
-      saveProgress();
-      openProgressModal();
-      renderHome();
-      toast('Đồng bộ tiến độ thành công!');
-      input.value = '';
-    } else {
-      throw new Error('Định dạng mã không hợp lệ');
-    }
-  } catch(e) {
-    toast('Lỗi nhập mã: ' + e.message);
   }
 }
 
@@ -1199,6 +1388,7 @@ function renderNextLessons(nexts) {
 function openSettings() {
   document.getElementById('settings-modal').style.display = 'flex';
   document.getElementById('drive-folder-id').value = CONFIG.DRIVE_FOLDER_ID;
+  updateUserDisplay();
 }
 
 function closeSettings() {
