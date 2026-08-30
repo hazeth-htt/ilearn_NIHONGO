@@ -452,8 +452,10 @@
           </div>
 
           <div class="game-win-banner" id="match-win-banner" style="display:none">
-            <div class="win-emoji">🎉</div>
-            <h3 class="win-title">Xuất Sắc! Hoàn Thành Ghép Thẻ!</h3>
+            <div class="win-icon-badge">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--color-success)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            </div>
+            <h3 class="win-title">Hoàn Thành Ghép Thẻ!</h3>
             <p class="win-desc">Thời gian hoàn thành: <b id="match-win-time" style="color:var(--color-success)">00:15</b></p>
             <button class="btn-game-play-again" onclick="startMatchGame()">Chơi Ván Mới ➔</button>
           </div>
@@ -468,7 +470,8 @@
               <span>Câu: </span><b id="speed-q-num">1 / 10</b>
             </div>
             <div class="game-stat-pill game-streak-pill" id="speed-streak-pill">
-              <span>🔥 Chuỗi: </span><b id="speed-streak-count">0</b>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              <span>Chuỗi đúng: </span><b id="speed-streak-count">0</b>
             </div>
             <div class="game-stat-pill">
               <span>Điểm: </span><b id="speed-score-count" style="color:var(--color-yellow)">0</b>
@@ -489,7 +492,9 @@
           </div>
 
           <div class="game-win-banner" id="speed-win-banner" style="display:none">
-            <div class="win-emoji">🏆</div>
+            <div class="win-icon-badge">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--color-yellow)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
             <h3 class="win-title">Kết Thúc Lượt Luyện Phản Xạ!</h3>
             <p class="win-desc">Tổng điểm: <b id="speed-final-score" style="color:var(--color-yellow)">0</b> • Độ chính xác: <b id="speed-final-acc" style="color:var(--color-success)">0%</b></p>
             <button class="btn-game-play-again" onclick="startSpeedQuiz()">Luyện Tập Lại ➔</button>
@@ -538,7 +543,9 @@
           </div>
 
           <div class="game-win-banner" id="scramble-win-banner" style="display:none">
-            <div class="win-emoji">🌟</div>
+            <div class="win-icon-badge">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--color-success)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            </div>
             <h3 class="win-title">Hoàn Thành Ghép Ký Tự!</h3>
             <p class="win-desc">Bạn đã nắm vững cách đọc và viết toàn bộ các từ trong bài học.</p>
             <button class="btn-game-play-again" onclick="startScrambleGame()">Luyện Lại Ván Mới ➔</button>

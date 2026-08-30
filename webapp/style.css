@@ -1415,21 +1415,26 @@ html, body {
 /* GAME 2: WORD MATCHING GRID */
 .match-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
   margin-bottom: 24px;
 }
-@media (min-width: 600px) {
+@media (min-width: 580px) {
+  .match-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 800px) {
   .match-grid {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 .match-card {
-  min-height: 90px;
+  min-height: 100px;
   background: var(--color-surface);
   border: 1.5px solid var(--color-border);
   border-radius: var(--radius-lg);
-  padding: 12px 10px;
+  padding: 16px 14px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1439,6 +1444,7 @@ html, body {
   transition: all var(--transition);
   box-shadow: var(--shadow-xs);
   user-select: none;
+  gap: 8px;
 }
 .match-card:hover {
   border-color: var(--color-primary);
@@ -1449,7 +1455,7 @@ html, body {
   border-color: var(--color-primary);
   background: var(--color-primary-tint);
   box-shadow: 0 0 16px var(--color-primary-glow);
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 .match-card.matched {
   border-color: var(--color-success);
@@ -1458,7 +1464,7 @@ html, body {
   opacity: 0;
   transform: scale(0.85);
   pointer-events: none;
-  transition: all 0.4s ease;
+  transition: all 0.35s ease;
 }
 .match-card.mismatch {
   border-color: var(--color-error);
@@ -1471,17 +1477,20 @@ html, body {
   75% { transform: translateX(6px); }
 }
 .match-card-text {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 800;
   color: #FFFFFF;
-  line-height: 1.3;
+  line-height: 1.4;
+  word-break: break-word;
 }
 .match-card-type {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
-  color: var(--color-text-dim);
-  text-transform: uppercase;
-  margin-top: 4px;
+  color: var(--color-secondary-pink);
+  background: rgba(239, 119, 211, 0.1);
+  padding: 2px 10px;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(239, 119, 211, 0.2);
 }
 
 /* GAME 3: SPEED VOCAB QUIZ */
@@ -1504,16 +1513,17 @@ html, body {
   background: var(--color-surface);
   border: 1.5px solid var(--color-border);
   border-radius: var(--radius-xl);
-  padding: 36px 20px;
+  padding: 38px 24px;
   text-align: center;
   margin-bottom: 20px;
   box-shadow: var(--shadow-sm);
 }
 .speed-kanji-display {
-  font-size: 42px;
+  font-size: 46px;
   font-weight: 900;
   color: #FFFFFF;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+  line-height: 1.2;
 }
 .speed-reading-display {
   font-size: 18px;
@@ -1567,7 +1577,7 @@ html, body {
   background: var(--color-surface);
   border: 1.5px solid var(--color-border);
   border-radius: var(--radius-xl);
-  padding: 28px 24px;
+  padding: 30px 24px;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -1598,8 +1608,8 @@ html, body {
   flex-wrap: wrap;
 }
 .scramble-slot {
-  width: 48px;
-  height: 54px;
+  width: 50px;
+  height: 56px;
   border-bottom: 3px solid var(--color-primary);
   background: var(--color-surface-secondary);
   border-radius: var(--radius-sm);
@@ -1691,9 +1701,14 @@ html, body {
   box-shadow: var(--shadow-md), 0 0 24px rgba(16, 185, 129, 0.2);
   animation: modalScaleIn 0.3s ease;
 }
-.win-emoji {
-  font-size: 48px;
-  margin-bottom: 12px;
+.win-icon-badge {
+  width: 64px; height: 64px;
+  border-radius: 50%;
+  background: var(--color-surface-secondary);
+  border: 1.5px solid var(--color-border);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
 .win-title {
   font-size: 22px;
@@ -1738,7 +1753,7 @@ html, body {
 .fc-card-wrap { perspective: 1000px; margin-bottom: 18px; }
 .fc-card {
   width: 100%;
-  min-height: 260px;
+  min-height: 290px;
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -1750,7 +1765,7 @@ html, body {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   border-radius: var(--radius-xl);
-  padding: 36px 24px;
+  padding: 42px 28px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1758,17 +1773,47 @@ html, body {
   text-align: center;
   box-shadow: var(--shadow-md);
 }
-.fc-front { background: var(--color-surface); border: 2px solid var(--color-border); }
+.fc-front {
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+}
 .fc-back {
-  background: linear-gradient(135deg, #1C2638 0%, #151A24 100%);
+  background: linear-gradient(135deg, #182236 0%, #131722 100%);
   border: 2px solid var(--color-primary);
   transform: rotateY(180deg);
 }
-.fc-kanji { font-size: 44px; font-weight: 900; color: #FFFFFF; margin-bottom: 8px; }
-.fc-reading { font-size: 20px; font-weight: 700; color: var(--color-secondary-pink); margin-bottom: 16px; }
-.fc-meaning { font-size: 26px; font-weight: 900; color: var(--color-success); margin-bottom: 8px; }
-.fc-example { font-size: 15px; font-weight: 500; color: var(--color-text-secondary); }
-.fc-tap-hint { font-size: 12px; font-weight: 700; color: var(--color-text-dim); position: absolute; bottom: 14px; }
+.fc-kanji {
+  font-size: 52px;
+  font-weight: 900;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+.fc-reading {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-secondary-pink);
+  margin-bottom: 16px;
+}
+.fc-meaning {
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--color-success);
+  margin-bottom: 8px;
+}
+.fc-example {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+.fc-tap-hint {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-text-dim);
+  position: absolute;
+  bottom: 14px;
+}
 .fc-audio-wrap { text-align: center; margin-bottom: 18px; }
 .btn-fc-audio {
   background: var(--color-primary-tint);

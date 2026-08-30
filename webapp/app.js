@@ -1261,7 +1261,7 @@ function startMatchGame() {
     el.setAttribute('data-type', tile.type);
     el.innerHTML = `
       <div class="match-card-text">${tile.text}</div>
-      <div class="match-card-type">${tile.type === 'JP' ? '🇯🇵 Nhật' : '🇻🇳 Việt'}</div>
+      <div class="match-card-type">${tile.type === 'JP' ? 'Tiếng Nhật' : 'Nghĩa tiếng Việt'}</div>
     `;
     el.onclick = () => handleMatchCardClick(el, tile.pairId, tile.type);
     grid.appendChild(el);
@@ -1306,7 +1306,7 @@ function handleMatchCardClick(el, pairId, type) {
         document.getElementById('match-win-time').textContent = `${m}:${s}`;
         document.getElementById('match-grid').style.display = 'none';
         document.getElementById('match-win-banner').style.display = 'block';
-        toast('🎉 Hoàn thành ghép thẻ xuất sắc!');
+        toast('Hoàn thành ghép thẻ xuất sắc!');
       }
     }, 250);
   } else {
@@ -1380,7 +1380,7 @@ function renderSpeedQuestion() {
     document.getElementById('speed-question-card').style.display = 'none';
     document.getElementById('speed-options-grid').style.display = 'none';
     document.getElementById('speed-win-banner').style.display = 'block';
-    toast('🏆 Hoàn thành lượt luyện phản xạ!');
+    toast('Hoàn thành lượt luyện phản xạ!');
     return;
   }
 
@@ -1498,7 +1498,7 @@ function startScrambleGame() {
 function renderScrambleQuestion() {
   if (scrambleState.index >= scrambleState.questions.length) {
     document.getElementById('scramble-win-banner').style.display = 'block';
-    toast('🌟 Hoàn thành toàn bộ xếp ký tự!');
+    toast('Hoàn thành toàn bộ xếp ký tự!');
     return;
   }
 
@@ -1588,7 +1588,7 @@ function checkScrambleAnswer() {
     slots.forEach(s => s.classList.add('correct-slot'));
     scrambleState.score++;
     document.getElementById('scramble-score-count').textContent = scrambleState.score;
-    toast('Chính xác! 🎉', 1500);
+    toast('Chính xác!', 1500);
     setTimeout(() => {
       scrambleState.index++;
       renderScrambleQuestion();
