@@ -1103,8 +1103,39 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
 });
 
 // ============================================================
-// FLASHCARD
+// VOCABULARY LEARNING & MINI-GAMES SYSTEM
 // ============================================================
+let matchTimerInterval = null;
+let speedTimerInterval = null;
+
+function switchFcMode(mode) {
+  document.querySelectorAll('.fc-mode-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.fc-game-container').forEach(c => c.style.display = 'none');
+
+  const btn = document.getElementById(`btn-fcmode-${mode}`);
+  if (btn) btn.classList.add('active');
+
+  const container = document.getElementById(`fc-container-${mode}`);
+  if (container) container.style.display = 'block';
+
+  // Stop any active timers
+  if (matchTimerInterval) { clearInterval(matchTimerInterval); matchTimerInterval = null; }
+  if (speedTimerInterval) { clearInterval(speedTimerInterval); speedTimerInterval = null; }
+
+  if (mode === 'card') {
+    renderFlashcard();
+  } else if (mode === 'match') {
+    startMatchGame();
+  } else if (mode === 'speed') {
+    startSpeedQuiz();
+  } else if (mode === 'scramble') {
+    startScrambleGame();
+  }
+}
+
+// ------------------------------------------------------------
+// GAME 1: 3D FLASHCARD
+// ------------------------------------------------------------
 function renderFlashcard() {
   const fc = State.fc;
   if (!fc.cards.length) return;
@@ -1153,6 +1184,418 @@ function markUnknown() {
   State.fc.unknown.add(State.fc.index);
   toast('Sẽ ôn lại từ này');
   nextCard();
+}
+
+// ------------------------------------------------------------
+// GAME 2: WORD MATCHING (Ghép thẻ nhanh)
+// ------------------------------------------------------------
+let matchState = {
+  firstPick: null,
+  secondPick: null,
+  matchedCount: 0,
+  totalPairs: 0,
+  seconds: 0,
+  lock: false
+};
+
+function startMatchGame() {
+  if (matchTimerInterval) clearInterval(matchTimerInterval);
+  const winBanner = document.getElementById('match-win-banner');
+  if (winBanner) winBanner.style.display = 'none';
+
+  const grid = document.getElementById('match-grid');
+  if (!grid) return;
+  grid.style.display = 'grid';
+  grid.innerHTML = '';
+
+  const cards = State.fc.cards || [];
+  if (cards.length < 2) {
+    grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:30px;color:var(--color-text-muted)">Cần ít nhất 2 từ vựng để chơi game ghép thẻ.</div>';
+    return;
+  }
+
+  // Shuffle and pick 6 vocabularies
+  const shuffledVocabs = [...cards].sort(() => Math.random() - 0.5).slice(0, 6);
+  matchState.totalPairs = shuffledVocabs.length;
+  matchState.matchedCount = 0;
+  matchState.firstPick = null;
+  matchState.secondPick = null;
+  matchState.seconds = 0;
+  matchState.lock = false;
+
+  document.getElementById('match-pairs-count').textContent = `0 / ${matchState.totalPairs}`;
+  document.getElementById('match-timer').textContent = '00:00';
+
+  // Start timer
+  matchTimerInterval = setInterval(() => {
+    matchState.seconds++;
+    const m = String(Math.floor(matchState.seconds / 60)).padStart(2, '0');
+    const s = String(matchState.seconds % 60).padStart(2, '0');
+    document.getElementById('match-timer').textContent = `${m}:${s}`;
+  }, 1000);
+
+  // Generate pair items
+  const tiles = [];
+  shuffledVocabs.forEach(v => {
+    tiles.push({
+      pairId: v.id,
+      text: v.previous_name || v.example || 'Từ vựng',
+      sub: v.example && v.previous_name ? v.example : '',
+      type: 'JP'
+    });
+    tiles.push({
+      pairId: v.id,
+      text: v.back_name || 'Nghĩa',
+      sub: '',
+      type: 'VN'
+    });
+  });
+
+  // Shuffle tiles
+  tiles.sort(() => Math.random() - 0.5);
+
+  tiles.forEach(tile => {
+    const el = document.createElement('div');
+    el.className = 'match-card';
+    el.setAttribute('data-pair-id', tile.pairId);
+    el.setAttribute('data-type', tile.type);
+    el.innerHTML = `
+      <div class="match-card-text">${tile.text}</div>
+      <div class="match-card-type">${tile.type === 'JP' ? '🇯🇵 Nhật' : '🇻🇳 Việt'}</div>
+    `;
+    el.onclick = () => handleMatchCardClick(el, tile.pairId, tile.type);
+    grid.appendChild(el);
+  });
+}
+
+function handleMatchCardClick(el, pairId, type) {
+  if (matchState.lock) return;
+  if (el.classList.contains('matched') || el.classList.contains('selected')) return;
+
+  el.classList.add('selected');
+
+  if (!matchState.firstPick) {
+    matchState.firstPick = { el, pairId, type };
+    return;
+  }
+
+  // Second pick
+  matchState.secondPick = { el, pairId, type };
+  matchState.lock = true;
+
+  const first = matchState.firstPick;
+  const second = matchState.secondPick;
+
+  // Check match: Same pairId and different language types
+  if (first.pairId === second.pairId && first.type !== second.type) {
+    // Correct Match
+    setTimeout(() => {
+      first.el.classList.add('matched');
+      second.el.classList.add('matched');
+      matchState.matchedCount++;
+      document.getElementById('match-pairs-count').textContent = `${matchState.matchedCount} / ${matchState.totalPairs}`;
+      matchState.firstPick = null;
+      matchState.secondPick = null;
+      matchState.lock = false;
+
+      // Check game win
+      if (matchState.matchedCount === matchState.totalPairs) {
+        clearInterval(matchTimerInterval);
+        const m = String(Math.floor(matchState.seconds / 60)).padStart(2, '0');
+        const s = String(matchState.seconds % 60).padStart(2, '0');
+        document.getElementById('match-win-time').textContent = `${m}:${s}`;
+        document.getElementById('match-grid').style.display = 'none';
+        document.getElementById('match-win-banner').style.display = 'block';
+        toast('🎉 Hoàn thành ghép thẻ xuất sắc!');
+      }
+    }, 250);
+  } else {
+    // Mismatch
+    setTimeout(() => {
+      first.el.classList.add('mismatch');
+      second.el.classList.add('mismatch');
+      setTimeout(() => {
+        first.el.classList.remove('selected', 'mismatch');
+        second.el.classList.remove('selected', 'mismatch');
+        matchState.firstPick = null;
+        matchState.secondPick = null;
+        matchState.lock = false;
+      }, 400);
+    }, 250);
+  }
+}
+
+// ------------------------------------------------------------
+// GAME 3: SPEED VOCAB QUIZ (Trắc nghiệm phản xạ)
+// ------------------------------------------------------------
+let speedState = {
+  questions: [],
+  index: 0,
+  score: 0,
+  streak: 0,
+  correctCount: 0,
+  timerInterval: null,
+  timeLeft: 100,
+  answered: false
+};
+
+function startSpeedQuiz() {
+  if (speedTimerInterval) clearInterval(speedTimerInterval);
+  const winBanner = document.getElementById('speed-win-banner');
+  if (winBanner) winBanner.style.display = 'none';
+
+  const card = document.getElementById('speed-question-card');
+  const grid = document.getElementById('speed-options-grid');
+  if (card) card.style.display = 'block';
+  if (grid) grid.style.display = 'grid';
+
+  const cards = State.fc.cards || [];
+  if (cards.length < 2) {
+    if (grid) grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:30px;color:var(--color-text-muted)">Cần ít nhất 2 từ vựng để chơi game trắc nghiệm phản xạ.</div>';
+    return;
+  }
+
+  // Shuffle questions (up to 10)
+  speedState.questions = [...cards].sort(() => Math.random() - 0.5).slice(0, 10);
+  speedState.index = 0;
+  speedState.score = 0;
+  speedState.streak = 0;
+  speedState.correctCount = 0;
+
+  document.getElementById('speed-score-count').textContent = '0';
+  document.getElementById('speed-streak-count').textContent = '0';
+
+  renderSpeedQuestion();
+}
+
+function renderSpeedQuestion() {
+  if (speedTimerInterval) clearInterval(speedTimerInterval);
+
+  if (speedState.index >= speedState.questions.length) {
+    // Finished
+    const total = speedState.questions.length;
+    const acc = Math.round((speedState.correctCount / total) * 100);
+    document.getElementById('speed-final-score').textContent = speedState.score;
+    document.getElementById('speed-final-acc').textContent = `${acc}% (${speedState.correctCount}/${total} câu)`;
+    document.getElementById('speed-question-card').style.display = 'none';
+    document.getElementById('speed-options-grid').style.display = 'none';
+    document.getElementById('speed-win-banner').style.display = 'block';
+    toast('🏆 Hoàn thành lượt luyện phản xạ!');
+    return;
+  }
+
+  const q = speedState.questions[speedState.index];
+  speedState.answered = false;
+
+  document.getElementById('speed-q-num').textContent = `${speedState.index + 1} / ${speedState.questions.length}`;
+  document.getElementById('speed-kanji').innerHTML = formatRikiText(q.previous_name || '');
+  document.getElementById('speed-reading').textContent = q.example || '';
+
+  // Generate 4 options: 1 correct + 3 random from other cards
+  const otherVocabs = State.fc.cards.filter(c => c.id !== q.id).sort(() => Math.random() - 0.5).slice(0, 3);
+  const options = [q, ...otherVocabs].sort(() => Math.random() - 0.5);
+
+  const grid = document.getElementById('speed-options-grid');
+  grid.innerHTML = options.map((opt, i) => `
+    <button class="speed-opt-btn" onclick="handleSpeedAnswer('${escapeHtml(opt.back_name)}', '${escapeHtml(q.back_name)}', this)">
+      <span class="answer-label">${String.fromCharCode(65 + i)}</span>
+      <span>${opt.back_name || 'Nghĩa'}</span>
+    </button>
+  `).join('');
+
+  // Start animated timer bar (10 seconds)
+  const timerBar = document.getElementById('speed-timer-bar');
+  let timeLeft = 100;
+  if (timerBar) timerBar.style.width = '100%';
+
+  speedTimerInterval = setInterval(() => {
+    timeLeft -= 1;
+    if (timerBar) timerBar.style.width = `${timeLeft}%`;
+    if (timeLeft <= 0) {
+      clearInterval(speedTimerInterval);
+      if (!speedState.answered) {
+        handleSpeedTimeout(q.back_name);
+      }
+    }
+  }, 100);
+}
+
+function escapeHtml(str) {
+  return (str || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+}
+
+function handleSpeedAnswer(selectedMeaning, correctMeaning, btnEl) {
+  if (speedState.answered) return;
+  speedState.answered = true;
+  if (speedTimerInterval) clearInterval(speedTimerInterval);
+
+  const isCorrect = selectedMeaning === correctMeaning;
+
+  if (isCorrect) {
+    btnEl.classList.add('correct');
+    speedState.streak++;
+    speedState.correctCount++;
+    const bonus = speedState.streak * 20;
+    speedState.score += (100 + bonus);
+    document.getElementById('speed-score-count').textContent = speedState.score;
+    document.getElementById('speed-streak-count').textContent = speedState.streak;
+  } else {
+    btnEl.classList.add('wrong');
+    speedState.streak = 0;
+    document.getElementById('speed-streak-count').textContent = '0';
+    // Highlight correct answer
+    document.querySelectorAll('.speed-opt-btn').forEach(b => {
+      if (b.textContent.includes(correctMeaning)) b.classList.add('correct');
+    });
+  }
+
+  setTimeout(() => {
+    speedState.index++;
+    renderSpeedQuestion();
+  }, 650);
+}
+
+function handleSpeedTimeout(correctMeaning) {
+  speedState.answered = true;
+  speedState.streak = 0;
+  document.getElementById('speed-streak-count').textContent = '0';
+  document.querySelectorAll('.speed-opt-btn').forEach(b => {
+    if (b.textContent.includes(correctMeaning)) b.classList.add('correct');
+  });
+  setTimeout(() => {
+    speedState.index++;
+    renderSpeedQuestion();
+  }, 800);
+}
+
+// ------------------------------------------------------------
+// GAME 4: CHARACTER SCRAMBLE (Xếp ký tự)
+// ------------------------------------------------------------
+let scrambleState = {
+  questions: [],
+  index: 0,
+  score: 0,
+  targetLetters: [],
+  userLetters: [],
+  poolLetters: []
+};
+
+function startScrambleGame() {
+  const winBanner = document.getElementById('scramble-win-banner');
+  if (winBanner) winBanner.style.display = 'none';
+
+  const cards = State.fc.cards || [];
+  if (cards.length === 0) return;
+
+  scrambleState.questions = [...cards].sort(() => Math.random() - 0.5).slice(0, 10);
+  scrambleState.index = 0;
+  scrambleState.score = 0;
+  document.getElementById('scramble-score-count').textContent = '0';
+
+  renderScrambleQuestion();
+}
+
+function renderScrambleQuestion() {
+  if (scrambleState.index >= scrambleState.questions.length) {
+    document.getElementById('scramble-win-banner').style.display = 'block';
+    toast('🌟 Hoàn thành toàn bộ xếp ký tự!');
+    return;
+  }
+
+  const q = scrambleState.questions[scrambleState.index];
+  document.getElementById('scramble-q-num').textContent = `${scrambleState.index + 1} / ${scrambleState.questions.length}`;
+  document.getElementById('scramble-meaning').textContent = q.back_name || 'Nghĩa từ vựng';
+  document.getElementById('scramble-kanji-hint').textContent = q.previous_name ? `Kanji: ${q.previous_name}` : '';
+
+  // Extract letters from previous_name or example
+  let raw = (q.previous_name || q.example || '').replace(/[\s\n：:・|⌊⌉]/g, '');
+  if (!raw) raw = 'にほんご';
+  const letters = Array.from(raw).slice(0, 8);
+  scrambleState.targetLetters = letters;
+  scrambleState.userLetters = [];
+
+  // Scrambled pool with index
+  scrambleState.poolLetters = letters.map((l, i) => ({ letter: l, id: i, used: false })).sort(() => Math.random() - 0.5);
+
+  renderScrambleSlots();
+  renderScramblePool();
+}
+
+function renderScrambleSlots() {
+  const wrap = document.getElementById('scramble-slots-wrap');
+  wrap.innerHTML = scrambleState.targetLetters.map((_, i) => {
+    const filled = scrambleState.userLetters[i];
+    return `<div class="scramble-slot ${filled ? 'filled' : ''}" onclick="removeScrambleSlot(${i})">${filled ? filled.letter : ''}</div>`;
+  }).join('');
+}
+
+function renderScramblePool() {
+  const pool = document.getElementById('scramble-pool');
+  pool.innerHTML = scrambleState.poolLetters.map((item) => `
+    <button class="scramble-letter-btn ${item.used ? 'used' : ''}" onclick="clickScrambleLetter(${item.id})">
+      ${item.letter}
+    </button>
+  `).join('');
+}
+
+function clickScrambleLetter(poolId) {
+  const item = scrambleState.poolLetters.find(p => p.id === poolId);
+  if (!item || item.used) return;
+  if (scrambleState.userLetters.length >= scrambleState.targetLetters.length) return;
+
+  item.used = true;
+  scrambleState.userLetters.push(item);
+  renderScrambleSlots();
+  renderScramblePool();
+
+  // Check if complete
+  if (scrambleState.userLetters.length === scrambleState.targetLetters.length) {
+    checkScrambleAnswer();
+  }
+}
+
+function removeScrambleSlot(slotIdx) {
+  if (slotIdx >= scrambleState.userLetters.length) return;
+  const removed = scrambleState.userLetters.splice(slotIdx, 1)[0];
+  if (removed) removed.used = false;
+  renderScrambleSlots();
+  renderScramblePool();
+}
+
+function clearScrambleAnswer() {
+  scrambleState.userLetters.forEach(l => l.used = false);
+  scrambleState.userLetters = [];
+  renderScrambleSlots();
+  renderScramblePool();
+}
+
+function hintScrambleLetter() {
+  const nextIdx = scrambleState.userLetters.length;
+  if (nextIdx >= scrambleState.targetLetters.length) return;
+  const expectedLetter = scrambleState.targetLetters[nextIdx];
+
+  const available = scrambleState.poolLetters.find(p => p.letter === expectedLetter && !p.used);
+  if (available) {
+    clickScrambleLetter(available.id);
+  }
+}
+
+function checkScrambleAnswer() {
+  const isCorrect = scrambleState.userLetters.every((l, i) => l.letter === scrambleState.targetLetters[i]);
+  const slots = document.querySelectorAll('.scramble-slot');
+
+  if (isCorrect) {
+    slots.forEach(s => s.classList.add('correct-slot'));
+    scrambleState.score++;
+    document.getElementById('scramble-score-count').textContent = scrambleState.score;
+    toast('Chính xác! 🎉', 1500);
+    setTimeout(() => {
+      scrambleState.index++;
+      renderScrambleQuestion();
+    }, 700);
+  } else {
+    toast('Chưa đúng thứ tự, hãy thử lại nhé!', 1500);
+  }
 }
 
 // ============================================================
