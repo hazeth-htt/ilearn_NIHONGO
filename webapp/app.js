@@ -773,12 +773,17 @@ function renderLeaf(leaf, courseId) {
   const badge = hasVideo
     ? '<span style="font-size:10px;background:rgba(85,55,234,0.15);color:var(--color-secondary-pink);padding:2px 8px;border-radius:10px;margin-left:8px;font-weight:700;border:1px solid rgba(85,55,234,0.3)">Drive HD</span>'
     : '';
+
+  const completedTag = isDone
+    ? `<span class="lesson-completed-tag"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Đã hoàn thành</span>`
+    : '';
+
   return `
-    <div class="lesson-item" onclick="openLesson(${leaf.id})">
+    <div class="lesson-item ${isDone ? 'completed' : ''}" onclick="openLesson(${leaf.id})">
       <span class="lesson-type-icon">${lessonTypeIcon(leaf.type)}</span>
-      <span class="lesson-item-name">${leaf.name}${badge}</span>
+      <span class="lesson-item-name">${leaf.name}${badge}${completedTag}</span>
       ${isDone
-        ? '<div class="lesson-done-badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>'
+        ? '<div class="lesson-done-badge" title="Đã hoàn thành"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>'
         : '<span class="lesson-lock"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></span>'
       }
     </div>`;
@@ -822,6 +827,85 @@ function openLesson(lessonId) {
   }
 }
 
+function updateCompleteButtonState(isDone) {
+  const btn = document.getElementById('btn-complete-lesson');
+  if (!btn) return;
+  if (isDone) {
+    btn.classList.add('is-completed');
+    btn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>✓ Đã hoàn thành</span>`;
+  } else {
+    btn.classList.remove('is-completed');
+    btn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Đánh dấu hoàn thành</span>`;
+  }
+}
+
+function markLessonComplete(showPopup = true) {
+  if (!State.currentCourse || !State.currentLesson) return;
+  const key = `${State.currentCourse.id}_${State.currentLesson}`;
+  if (!State.progress[key]) State.progress[key] = {};
+  State.progress[key].complete = true;
+  saveProgress();
+  updateCompleteButtonState(true);
+
+  if (showPopup) {
+    showCompletionModal();
+  } else {
+    toast('Đã hoàn thành bài học!');
+  }
+}
+
+function showCompletionModal() {
+  const modal = document.getElementById('completion-modal');
+  if (!modal) return;
+
+  const lessonName = State.currentLessonData?.name || 'Bài học';
+  const course = State.currentCourse;
+
+  document.getElementById('completion-lesson-name').textContent = lessonName;
+
+  if (course) {
+    const done = countCompleted(course.id);
+    const total = State.progress[`total_${course.id}`] || (course.id === 12 ? 117 : course.id === 11 ? 622 : course.id === 3 ? 912 : 452);
+    const pct = total > 0 ? Math.round(done / total * 100) : 0;
+    document.getElementById('comp-course-stat').textContent = `${done} / ${total} bài (${pct}%)`;
+  }
+
+  const totalLessons = 2103;
+  const completedCount = Object.values(State.progress).filter(p => p && p.complete).length;
+  const totalPct = Math.round((completedCount / totalLessons) * 100);
+  document.getElementById('comp-total-stat').textContent = `${totalPct}% (${completedCount}/${totalLessons} bài)`;
+
+  // Check if there is a next lesson
+  const nexts = State.currentLessonData?.lessons_after || [];
+  const btnNext = document.getElementById('btn-comp-next');
+  if (btnNext) {
+    if (nexts.length > 0) {
+      btnNext.style.display = 'inline-flex';
+      btnNext.setAttribute('data-next-id', nexts[0].id);
+    } else {
+      btnNext.style.display = 'none';
+    }
+  }
+
+  modal.style.display = 'flex';
+}
+
+function closeCompletionModal() {
+  const modal = document.getElementById('completion-modal');
+  if (modal) modal.style.display = 'none';
+}
+
+function goToNextLessonFromModal() {
+  const btnNext = document.getElementById('btn-comp-next');
+  const nextId = btnNext?.getAttribute('data-next-id');
+  closeCompletionModal();
+  if (nextId) {
+    openLesson(parseInt(nextId, 10));
+  } else {
+    if (State.currentCourse) showScreen('screen-course');
+  }
+}
+
 function renderLesson(lesson) {
   const lname = lesson.name || 'Bài học';
   document.getElementById('lesson-topbar-title').textContent = lname;
@@ -831,11 +915,14 @@ function renderLesson(lesson) {
   const videoUrls = lesson.video_url || [];
   const vocabs = lesson.vocabularies || [];
 
+  const isLessonDone = State.currentCourse && State.progress[`${State.currentCourse.id}_${State.currentLesson}`]?.complete;
+  updateCompleteButtonState(isLessonDone);
+
   // Metadata
   const meta = [];
   if (lesson.time) meta.push(`Thời lượng: ${Math.round(lesson.time/60)} phút`);
   meta.push(`${lessonTypeName(ltype)}`);
-  if (lesson.is_complete) meta.push('Đã hoàn thành');
+  if (isLessonDone || lesson.is_complete) meta.push('✓ Đã hoàn thành');
   document.getElementById('lesson-meta').textContent = meta.join('  ·  ');
   document.getElementById('lesson-desc').innerHTML = formatRikiText(lesson.description || '');
 
@@ -978,12 +1065,7 @@ function renderLesson(lesson) {
 
   // Complete button
   document.getElementById('btn-complete-lesson').onclick = () => {
-    if (!State.currentCourse) return;
-    const key = `${State.currentCourse.id}_${State.currentLesson}`;
-    if (!State.progress[key]) State.progress[key] = {};
-    State.progress[key].complete = true;
-    saveProgress();
-    toast('Đã hoàn thành bài học!');
+    markLessonComplete(true);
   };
 
   document.getElementById('btn-back-lesson').onclick = () => {
@@ -1356,17 +1438,21 @@ function renderNextLessons(nexts) {
       '<div class="empty-state"><p>Đây là bài học cuối cùng trong phần này.</p></div>';
     return;
   }
-  container.innerHTML = nexts.slice(0, 6).map(n => `
+  container.innerHTML = nexts.slice(0, 6).map(n => {
+    const isNextDone = State.currentCourse && State.progress[`${State.currentCourse.id}_${n.id}`]?.complete;
+    const doneTag = isNextDone ? '<span class="next-completed-tag">✓ Đã hoàn thành</span>' : '';
+    return `
     <div class="next-card" onclick="openLesson(${n.id})">
       <div class="next-card-icon">${lessonTypeIcon(n.type)}</div>
       <div class="next-card-info">
-        <div class="next-card-name">${n.name || 'Bài tiếp theo'}</div>
+        <div class="next-card-name">${n.name || 'Bài tiếp theo'} ${doneTag}</div>
         <div class="next-card-type">${lessonTypeName(n.type)}</div>
       </div>
       <div class="next-card-arrow">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
       </div>
-    </div>`).join('');
+    </div>`;
+  }).join('');
 }
 
 // ============================================================
@@ -1424,6 +1510,13 @@ const progressModal = document.getElementById('progress-modal');
 if (progressModal) {
   progressModal.addEventListener('click', function(e) {
     if (e.target === this) closeProgressModal();
+  });
+}
+
+const completionModal = document.getElementById('completion-modal');
+if (completionModal) {
+  completionModal.addEventListener('click', function(e) {
+    if (e.target === this) closeCompletionModal();
   });
 }
 

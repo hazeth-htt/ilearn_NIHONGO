@@ -514,6 +514,47 @@
 </div>
 
 <!-- ============================================================
+     LESSON COMPLETION POPUP MODAL (Figma iLearn Style)
+============================================================ -->
+<div class="modal-overlay" id="completion-modal" style="display:none">
+  <div class="modal completion-modal-card">
+    <div class="completion-hero">
+      <div class="completion-icon-glow">
+        <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+      </div>
+      <span class="badge-pill" style="color:var(--color-success);background:var(--color-success-light);border-color:var(--color-success)">BÀI HỌC HOÀN THÀNH</span>
+      <h3 class="completion-title">Xuất Sắc!</h3>
+      <p class="completion-lesson-name" id="completion-lesson-name">Tên bài học</p>
+      <p class="completion-desc">Tiến độ học tập đã được ghi nhận và tự động đồng bộ lên Cloud.</p>
+    </div>
+
+    <div class="completion-stats-box">
+      <div class="comp-stat-item">
+        <span class="comp-stat-label">Tiến độ khóa học</span>
+        <span class="comp-stat-val" id="comp-course-stat">0 / 0 bài</span>
+      </div>
+      <div class="comp-stat-item">
+        <span class="comp-stat-label">Tổng toàn bộ JLPT</span>
+        <span class="comp-stat-val" id="comp-total-stat">0%</span>
+      </div>
+    </div>
+
+    <div class="completion-actions">
+      <button class="btn-comp-next" id="btn-comp-next" onclick="goToNextLessonFromModal()">
+        <span>Học Bài Tiếp Theo</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </button>
+      <button class="btn-comp-stay" onclick="closeCompletionModal()">
+        <span>Ở lại xem lại bài</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
      SETTINGS & ACCOUNT MODAL
 ============================================================ -->
 <div class="modal-overlay" id="settings-modal" style="display:none">
