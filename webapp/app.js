@@ -721,6 +721,26 @@ function updateCourseProgress(done, total) {
   document.getElementById('progress-fill').style.width = `${pct}%`;
 }
 
+function getNodeStats(node, courseId) {
+  const leaves = flattenLeaves(node.children?.length ? node.children : [node]);
+  const total = leaves.length;
+  const done = leaves.filter(l => State.progress[`${courseId}_${l.id}`]?.complete).length;
+  const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+  return { total, done, pct, leaves };
+}
+
+function getLessonParentChapter(lessonId, courseId) {
+  if (!courseId) return null;
+  const curriculum = DataSource.getCurriculum(courseId);
+  for (const chapter of curriculum) {
+    const leaves = flattenLeaves(chapter.children || [chapter]);
+    if (leaves.some(l => l.id === lessonId)) {
+      return chapter;
+    }
+  }
+  return null;
+}
+
 function renderCourseTree(curriculum, courseId) {
   const tree = document.getElementById('lesson-tree');
   tree.innerHTML = '';
@@ -728,14 +748,24 @@ function renderCourseTree(curriculum, courseId) {
     const el = document.createElement('div');
     el.className = 'lesson-chapter';
     const children = chapter.children || [];
+    const stats = getNodeStats(chapter, courseId);
     el.innerHTML = `
       <div class="chapter-header" onclick="toggleChapter(this)">
-        <span class="chapter-icon">${lessonTypeIcon(chapter.type)}</span>
-        <span class="chapter-name">${chapter.name}</span>
-        <span class="chapter-count">${children.length} phần</span>
-        <span class="chapter-arrow">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-        </span>
+        <div class="chapter-header-main">
+          <span class="chapter-icon">${lessonTypeIcon(chapter.type)}</span>
+          <div class="chapter-title-wrap">
+            <div class="chapter-name">${chapter.name}</div>
+            <div class="chapter-stats-meta">
+              <span class="chapter-stat-text">${stats.done}/${stats.total} bài (${stats.pct}%)</span>
+            </div>
+          </div>
+          <span class="chapter-arrow">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </span>
+        </div>
+        <div class="chapter-progress-track">
+          <div class="chapter-progress-fill ${stats.pct === 100 ? 'done' : ''}" style="width: ${stats.pct}%;"></div>
+        </div>
       </div>
       <div class="chapter-lessons">${renderChildren(children, courseId)}</div>`;
     tree.appendChild(el);
@@ -751,14 +781,24 @@ function renderChildren(nodes, courseId) {
   return nodes.map(node => {
     const kids = node.children || [];
     if (kids.length) {
+      const stats = getNodeStats(node, courseId);
       return `<div class="skill-group">
         <div class="skill-header" onclick="toggleSkill(this)">
-          <span class="skill-icon">${lessonTypeIcon(node.type)}</span>
-          <span class="skill-name">${node.name}</span>
-          <span class="chapter-count">${kids.length} bài</span>
-          <span class="skill-arrow">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-          </span>
+          <div class="skill-header-main">
+            <span class="skill-icon">${lessonTypeIcon(node.type)}</span>
+            <div class="skill-title-wrap">
+              <div class="skill-name">${node.name}</div>
+              <div class="skill-stats-meta">
+                <span class="skill-stat-text">${stats.done}/${stats.total} bài (${stats.pct}%)</span>
+              </div>
+            </div>
+            <span class="skill-arrow">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </span>
+          </div>
+          <div class="skill-progress-track">
+            <div class="skill-progress-fill ${stats.pct === 100 ? 'done' : ''}" style="width: ${stats.pct}%;"></div>
+          </div>
         </div>
         <div class="skill-lessons">${kids.map(l => renderLeaf(l, courseId)).join('')}</div>
       </div>`;
@@ -917,6 +957,19 @@ function renderLesson(lesson) {
 
   const isLessonDone = State.currentCourse && State.progress[`${State.currentCourse.id}_${State.currentLesson}`]?.complete;
   updateCompleteButtonState(isLessonDone);
+
+  // Parent chapter progress
+  const parentChapter = State.currentCourse ? getLessonParentChapter(lesson.id, State.currentCourse.id) : null;
+  const lppCard = document.getElementById('lesson-parent-progress-card');
+  if (parentChapter && lppCard && State.currentCourse) {
+    const stats = getNodeStats(parentChapter, State.currentCourse.id);
+    document.getElementById('lpp-chapter-name').textContent = `Tiến độ: ${parentChapter.name || 'Chương'}`;
+    document.getElementById('lpp-stat-text').textContent = `${stats.done} / ${stats.total} bài (${stats.pct}%)`;
+    document.getElementById('lpp-fill-bar').style.width = `${stats.pct}%`;
+    lppCard.style.display = 'flex';
+  } else if (lppCard) {
+    lppCard.style.display = 'none';
+  }
 
   // Metadata
   const meta = [];
@@ -1261,8 +1314,10 @@ function startMatchGame() {
     el.setAttribute('data-pair-id', tile.pairId);
     el.setAttribute('data-type', 'JP');
     el.innerHTML = `
-      <div class="match-card-text">${tile.text}</div>
-      ${tile.sub ? `<div class="match-card-sub">${tile.sub}</div>` : ''}
+      <div class="match-card-content">
+        <div class="match-card-text">${tile.text}</div>
+        ${tile.sub ? `<div class="match-card-sub">${tile.sub}</div>` : ''}
+      </div>
     `;
     el.onclick = () => handleMatchCardClick(el, tile.pairId, 'JP');
     colJp.appendChild(el);
@@ -1275,7 +1330,9 @@ function startMatchGame() {
     el.setAttribute('data-pair-id', tile.pairId);
     el.setAttribute('data-type', 'VN');
     el.innerHTML = `
-      <div class="match-card-text">${tile.text}</div>
+      <div class="match-card-content">
+        <div class="match-card-text">${tile.text}</div>
+      </div>
     `;
     el.onclick = () => handleMatchCardClick(el, tile.pairId, 'VN');
     colVn.appendChild(el);

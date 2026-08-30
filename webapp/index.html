@@ -314,6 +314,21 @@
         <div class="info-tag-row">
           <span class="badge-pill">CHI TIẾT BÀI HỌC</span>
         </div>
+
+        <!-- Chapter Progress Bar in Lesson -->
+        <div class="lesson-parent-progress-card" id="lesson-parent-progress-card" style="display:none">
+          <div class="lpp-header">
+            <div class="lpp-left">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+              <span class="lpp-label" id="lpp-chapter-name">Tiến độ chương</span>
+            </div>
+            <span class="lpp-stat" id="lpp-stat-text">0 / 0 bài (0%)</span>
+          </div>
+          <div class="lpp-track">
+            <div class="lpp-fill" id="lpp-fill-bar" style="width: 0%;"></div>
+          </div>
+        </div>
+
         <h3 id="lesson-name-info" class="info-lesson-title"></h3>
         <div class="lesson-meta" id="lesson-meta"></div>
         <div class="lesson-desc" id="lesson-desc"></div>
