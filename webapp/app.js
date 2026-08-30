@@ -1203,18 +1203,22 @@ function startMatchGame() {
   const winBanner = document.getElementById('match-win-banner');
   if (winBanner) winBanner.style.display = 'none';
 
-  const grid = document.getElementById('match-grid');
-  if (!grid) return;
-  grid.style.display = 'grid';
-  grid.innerHTML = '';
+  const wrap = document.getElementById('match-columns-wrap');
+  const colJp = document.getElementById('match-col-jp');
+  const colVn = document.getElementById('match-col-vn');
+  if (!wrap || !colJp || !colVn) return;
+
+  wrap.style.display = 'grid';
+  colJp.innerHTML = '';
+  colVn.innerHTML = '';
 
   const cards = State.fc.cards || [];
   if (cards.length < 2) {
-    grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:30px;color:var(--color-text-muted)">Cần ít nhất 2 từ vựng để chơi game ghép thẻ.</div>';
+    colJp.innerHTML = '<div style="text-align:center;padding:20px;color:var(--color-text-muted)">Cần ít nhất 2 từ vựng.</div>';
     return;
   }
 
-  // Shuffle and pick 6 vocabularies
+  // Shuffle and pick 5-6 vocabularies
   const shuffledVocabs = [...cards].sort(() => Math.random() - 0.5).slice(0, 6);
   matchState.totalPairs = shuffledVocabs.length;
   matchState.matchedCount = 0;
@@ -1234,37 +1238,47 @@ function startMatchGame() {
     document.getElementById('match-timer').textContent = `${m}:${s}`;
   }, 1000);
 
-  // Generate pair items
-  const tiles = [];
-  shuffledVocabs.forEach(v => {
-    tiles.push({
-      pairId: v.id,
-      text: v.previous_name || v.example || 'Từ vựng',
-      sub: v.example && v.previous_name ? v.example : '',
-      type: 'JP'
-    });
-    tiles.push({
-      pairId: v.id,
-      text: v.back_name || 'Nghĩa',
-      sub: '',
-      type: 'VN'
-    });
-  });
+  // Japanese tiles
+  const jpTiles = shuffledVocabs.map(v => ({
+    pairId: v.id,
+    text: v.previous_name || v.example || 'Từ vựng',
+    sub: v.example && v.previous_name && v.example !== v.previous_name ? v.example : '',
+    type: 'JP'
+  })).sort(() => Math.random() - 0.5);
 
-  // Shuffle tiles
-  tiles.sort(() => Math.random() - 0.5);
+  // Vietnamese tiles
+  const vnTiles = shuffledVocabs.map(v => ({
+    pairId: v.id,
+    text: v.back_name || 'Nghĩa',
+    sub: '',
+    type: 'VN'
+  })).sort(() => Math.random() - 0.5);
 
-  tiles.forEach(tile => {
+  // Render Japanese Column
+  jpTiles.forEach(tile => {
     const el = document.createElement('div');
     el.className = 'match-card';
     el.setAttribute('data-pair-id', tile.pairId);
-    el.setAttribute('data-type', tile.type);
+    el.setAttribute('data-type', 'JP');
     el.innerHTML = `
       <div class="match-card-text">${tile.text}</div>
-      <div class="match-card-type">${tile.type === 'JP' ? 'Tiếng Nhật' : 'Nghĩa tiếng Việt'}</div>
+      ${tile.sub ? `<div class="match-card-sub">${tile.sub}</div>` : ''}
     `;
-    el.onclick = () => handleMatchCardClick(el, tile.pairId, tile.type);
-    grid.appendChild(el);
+    el.onclick = () => handleMatchCardClick(el, tile.pairId, 'JP');
+    colJp.appendChild(el);
+  });
+
+  // Render Vietnamese Column
+  vnTiles.forEach(tile => {
+    const el = document.createElement('div');
+    el.className = 'match-card';
+    el.setAttribute('data-pair-id', tile.pairId);
+    el.setAttribute('data-type', 'VN');
+    el.innerHTML = `
+      <div class="match-card-text">${tile.text}</div>
+    `;
+    el.onclick = () => handleMatchCardClick(el, tile.pairId, 'VN');
+    colVn.appendChild(el);
   });
 }
 
@@ -1286,7 +1300,7 @@ function handleMatchCardClick(el, pairId, type) {
   const first = matchState.firstPick;
   const second = matchState.secondPick;
 
-  // Check match: Same pairId and different language types
+  // Check match: Same pairId and different columns
   if (first.pairId === second.pairId && first.type !== second.type) {
     // Correct Match
     setTimeout(() => {
@@ -1304,7 +1318,8 @@ function handleMatchCardClick(el, pairId, type) {
         const m = String(Math.floor(matchState.seconds / 60)).padStart(2, '0');
         const s = String(matchState.seconds % 60).padStart(2, '0');
         document.getElementById('match-win-time').textContent = `${m}:${s}`;
-        document.getElementById('match-grid').style.display = 'none';
+        const wrap = document.getElementById('match-columns-wrap');
+        if (wrap) wrap.style.display = 'none';
         document.getElementById('match-win-banner').style.display = 'block';
         toast('Hoàn thành ghép thẻ xuất sắc!');
       }
