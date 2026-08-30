@@ -1,11 +1,6 @@
 {
-  "version": 2,
-  "public": true,
   "cleanUrls": true,
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/webapp/$1"
-    }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/webapp/$1" }
   ]
 }
