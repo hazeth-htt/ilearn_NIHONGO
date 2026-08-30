@@ -12,17 +12,20 @@ const CONFIG = {
   CLOUD_SYNC_URL:     'https://api.jsonbin.io/v3/b'
 };
 
-// ============================================================
-// AUTHENTICATION & SECURITY CONTROLLER
-// ============================================================
+const MASTER_USER = 'hazethiscoming';
+const MASTER_PASS = 'Thang@6102005';
+
 const Auth = {
   sessionKey: 'ilearn_auth_session',
-  usersDbKey: 'ilearn_users_db',
 
   getSession() {
     try {
       const s = localStorage.getItem(this.sessionKey);
-      return s ? JSON.parse(s) : null;
+      if (!s) return null;
+      const parsed = JSON.parse(s);
+      if (parsed && parsed.username === MASTER_USER) return parsed;
+      this.clearSession();
+      return null;
     } catch(e) {
       return null;
     }
@@ -47,38 +50,22 @@ const Auth = {
   },
 
   login(username, pin) {
-    const cleanUser = username.trim().toLowerCase();
+    const cleanUser = username.trim().toLowerCase().replace(/\.$/, '');
     const cleanPin = pin.trim();
-    if (!cleanUser || cleanPin.length < 4) {
-      throw new Error('Vui lòng nhập tài khoản và mã PIN tối thiểu 4 ký tự!');
+
+    if (!cleanUser || !cleanPin) {
+      throw new Error('Vui lòng nhập tài khoản và mật khẩu bảo mật!');
     }
 
-    let usersDb = {};
-    try {
-      usersDb = JSON.parse(localStorage.getItem(this.usersDbKey) || '{}');
-    } catch(e) {}
-
-    const hashedPin = this.hash(cleanPin);
-
-    // If existing user, verify PIN
-    if (usersDb[cleanUser]) {
-      if (usersDb[cleanUser].pin !== hashedPin) {
-        throw new Error('Mã PIN bảo mật không chính xác!');
-      }
-    } else {
-      // First time login with this account -> register
-      usersDb[cleanUser] = {
-        username: cleanUser,
-        pin: hashedPin,
-        createdAt: new Date().toISOString()
-      };
-      localStorage.setItem(this.usersDbKey, JSON.stringify(usersDb));
+    // Strict Master Security Check - Only the owner is permitted to access
+    if (cleanUser !== MASTER_USER || cleanPin !== MASTER_PASS) {
+      throw new Error('Tài khoản hoặc mật khẩu không chính xác! Quyền truy cập bị từ chối.');
     }
 
     const sessionUser = {
-      username: cleanUser,
-      displayName: username.trim(),
-      token: this.hash(cleanUser + '_' + hashedPin)
+      username: MASTER_USER,
+      displayName: 'Hazeth',
+      token: this.hash(MASTER_USER + '_' + MASTER_PASS)
     };
     this.setSession(sessionUser);
     return sessionUser;
